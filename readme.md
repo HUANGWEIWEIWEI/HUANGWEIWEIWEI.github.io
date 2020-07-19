@@ -1,7 +1,5 @@
-Vuepress搭建的的静态网页，伟伟黄的前端笔记。
-
 # vuepress-app
-> a vuepress app about qiufeihong
+>Vuepress搭建的的静态网页，伟伟黄的前端笔记。
 
 ### Build Setup
 
