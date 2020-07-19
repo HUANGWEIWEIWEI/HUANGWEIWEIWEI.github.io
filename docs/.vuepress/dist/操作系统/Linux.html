@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>3.Linux | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/60.c370307e.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/24.f1868055.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/37.edac8bc3.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/57.9e95edc3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/70.b73cfa4e.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/8.f8cdd7e6.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" aria-current="page" class="sidebar-link">1.操作系统（基础）</a></li><li><a href="/操作系统/操作系统.html" class="sidebar-link">2.操作系统（进阶）</a></li><li><a href="/操作系统/Linux.html" class="active sidebar-link">3.Linux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-1-linux简介" class="sidebar-link">3.1 Linux简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-1-1-linux-的发行版" class="sidebar-link">3.1.1 Linux 的发行版</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-1-2-linux-应用领域" class="sidebar-link">3.1.2 Linux 应用领域</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-1-3-linux-vs-windows" class="sidebar-link">3.1.3 Linux vs Windows</a></li></ul></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-2-安装" class="sidebar-link">3.2 安装</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-系统启动过程" class="sidebar-link">3.3 系统启动过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-1内核引导" class="sidebar-link">3.3.1内核引导</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-2运行init" class="sidebar-link">3.3.2运行init</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-3系统初始化" class="sidebar-link">3.3.3系统初始化</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-4建立终端" class="sidebar-link">3.3.4建立终端</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-3-5用户登录系统" class="sidebar-link">3.3.5用户登录系统</a></li></ul></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-4-系统目录结构" class="sidebar-link">3.4 系统目录结构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-4-1-目录的解释：" class="sidebar-link">3.4.1 目录的解释：</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-4-2-目录作用分类" class="sidebar-link">3.4.2 目录作用分类</a></li></ul></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-5-远程登录" class="sidebar-link">3.5 远程登录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-5-1-终端利用ssh登录远程服务器" class="sidebar-link">3.5.1 终端利用ssh登录远程服务器</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-5-2-mac终端连接远程服务器" class="sidebar-link">3.5.2 Mac终端连接远程服务器</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-6-文件基本属性" class="sidebar-link">3.6 文件基本属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-6-1-属性介绍" class="sidebar-link">3.6.1 属性介绍</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-6-2-linux文件属主和属组" class="sidebar-link">3.6.2 Linux文件属主和属组</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-6-3-更改文件属性" class="sidebar-link">3.6.3 更改文件属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-文件与目录管理" class="sidebar-link">3.7 文件与目录管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-1-ls-列出目录及文件名" class="sidebar-link">3.7.1 ls: 列出目录及文件名</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-2-cd：切换目录" class="sidebar-link">3.7.2 cd：切换目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-3-pwd：显示目前的目录" class="sidebar-link">3.7.3 pwd：显示目前的目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-4-mkdir：创建一个新的目录" class="sidebar-link">3.7.4 mkdir：创建一个新的目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-5-rmdir：删除一个空的目录" class="sidebar-link">3.7.5 rmdir：删除一个空的目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-6-cp-复制文件或目录" class="sidebar-link">3.7.6 cp: 复制文件或目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-7-rm-移除文件或目录" class="sidebar-link">3.7.7 rm: 移除文件或目录</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-8-mv-移动文件与目录，或修改文件与目录的名称" class="sidebar-link">3.7.8 mv: 移动文件与目录，或修改文件与目录的名称</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-7-9-查看文件内容" class="sidebar-link">3.7.9 查看文件内容</a></li></ul></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-8-用户和用户组管理" class="sidebar-link">3.8 用户和用户组管理</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-9-磁盘管理" class="sidebar-link">3.9  磁盘管理</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-10-vi-vim" class="sidebar-link">3.10 vi/vim</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#_3-11-yum-命令" class="sidebar-link">3.11 yum 命令</a></li><li class="sidebar-sub-header"><a href="/操作系统/Linux.html#参考文章" class="sidebar-link">参考文章</a></li></ul></li><li><a href="/操作系统/面试题.html" class="sidebar-link">X.面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_3-linux"><a href="#_3-linux" class="header-anchor">#</a> 3.Linux</h1> <h2 id="_3-1-linux简介"><a href="#_3-1-linux简介" class="header-anchor">#</a> 3.1 Linux简介</h2> <p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。
+Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。
+Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p> <h3 id="_3-1-1-linux-的发行版"><a href="#_3-1-1-linux-的发行版" class="header-anchor">#</a> 3.1.1 Linux 的发行版</h3> <p>Linux 的发行版说简单点就是将 Linux 内核与应用软件做一个打包。</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718124436.png" alt=""></p> <p>目前市面上较知名的发行版有：Ubuntu、RedHat、CentOS、Debian、Fedora、SuSE、OpenSUSE、Arch Linux、SolusOS 等。</p> <h3 id="_3-1-2-linux-应用领域"><a href="#_3-1-2-linux-应用领域" class="header-anchor">#</a> 3.1.2 Linux 应用领域</h3> <p>今天各种场合都有使用各种 Linux 发行版，从嵌入式设备到超级计算机，并且在服务器领域确定了地位，通常服务器使用 LAMP（Linux + Apache + MySQL + PHP）或 LNMP（Linux + Nginx+ MySQL + PHP）组合。</p> <p>目前 Linux 不仅在家庭与企业中使用，并且在政府中也很受欢迎。</p> <p>• 巴西联邦政府由于支持 Linux 而世界闻名。</p> <p>• 有新闻报道俄罗斯军队自己制造的 Linux 发布版的，做为 G.H.ost 项目已经取得成果。</p> <p>• 印度的 Kerala 联邦计划在向全联邦的高中推广使用 Linux。</p> <p>• 中华人民共和国为取得技术独立，在龙芯处理器中排他性地使用 Linux。</p> <p>• 在西班牙的一些地区开发了自己的 Linux 发布版，并且在政府与教育领域广泛使用，如 Extremadura 地区的 gnuLinEx 和 Andalusia 地区的 Guadalinex。</p> <p>• 葡萄牙同样使用自己的 Linux 发布版 Caixa Mágica，用于 Magalh?es 笔记本电脑和 e-escola 政府软件。</p> <p>• 法国和德国同样开始逐步采用 Linux。</p> <h3 id="_3-1-3-linux-vs-windows"><a href="#_3-1-3-linux-vs-windows" class="header-anchor">#</a> 3.1.3 Linux vs Windows</h3> <p>目前国内 Linux 更多的是应用于服务器上，而桌面操作系统更多使用的是 Windows。主要区别如下</p> <table><thead><tr><th>比较</th> <th style="text-align:center;">Windows</th> <th style="text-align:center;">Linux</th></tr></thead> <tbody><tr><td>界面</td> <td style="text-align:center;">界面统一，外壳程序固定所有 Windows 程序菜单几乎一致，快捷键也几乎相同</td> <td style="text-align:center;">图形界面风格依发布版不同而不同，可能互不兼容。GNU/Linux 的终端机是从 UNIX 传承下来，基本命令和操作方法也几乎一致。</td></tr> <tr><td>驱动程序</td> <td style="text-align:center;">驱动程序丰富，版本更新频繁。默认安装程序里面一般包含有该版本发布时流行的硬件驱动程序，之后所出的新硬件驱动依赖于硬件厂商提供。对于一些老硬件，如果没有了原配的驱动有时很难支持。另外，有时硬件厂商未提供所需版本的 Windows 下的驱动，也会比较头痛。</td> <td style="text-align:center;">由志愿者开发，由 Linux 核心开发小组发布，很多硬件厂商基于版权考虑并未提供驱动程序，尽管多数无需手动安装，但是涉及安装则相对复杂，使得新用户面对驱动程序问题（是否存在和安装方法）会一筹莫展。但是在开源开发模式下，许多老硬件尽管在Windows下很难支持的也容易找到驱动。HP、Intel、AMD 等硬件厂商逐步不同程度支持开源驱动，问题正在得到缓解。</td></tr> <tr><td>使用</td> <td style="text-align:center;">使用比较简单，容易入门。图形化界面对没有计算机背景知识的用户使用十分有利。</td> <td style="text-align:center;">图形界面使用简单，容易入门。文字界面，需要学习才能掌握。</td></tr> <tr><td>学习</td> <td style="text-align:center;">系统构造复杂、变化频繁，且知识、技能淘汰快，深入学习困难。</td> <td style="text-align:center;">系统构造简单、稳定，且知识、技能传承性好，深入学习相对容易。</td></tr> <tr><td>软件</td> <td style="text-align:center;">每一种特定功能可能都需要商业软件的支持，需要购买相应的授权。</td> <td style="text-align:center;">大部分软件都可以自由获取，同样功能的软件选择较少。</td></tr></tbody></table> <h2 id="_3-2-安装"><a href="#_3-2-安装" class="header-anchor">#</a> 3.2 安装</h2> <h2 id="_3-3-系统启动过程"><a href="#_3-3-系统启动过程" class="header-anchor">#</a> 3.3 系统启动过程</h2> <p>分为5个阶段：</p> <p>• 内核的引导。</p> <p>• 运行 init。</p> <p>• 系统初始化。</p> <p>• 建立终端 。</p> <p>• 用户登录系统。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>init程序的类型：  
+• SysV: init, CentOS 5之前, 配置文件： /etc/inittab。   
+• Upstart: init,CentOS 6, 配置文件： /etc/inittab, /etc/init/*.conf。  
+• Systemd： systemd, CentOS 7,配置文件： /usr/lib/systemd/system、 /etc/systemd/system。  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_3-3-1内核引导"><a href="#_3-3-1内核引导" class="header-anchor">#</a> 3.3.1内核引导</h3> <p>当计算机打开电源后，首先是BIOS开机自检，按照BIOS中设置的启动设备（通常是硬盘）来启动。</p> <p>操作系统接管硬件以后，首先读入 /boot 目录下的内核文件。</p> <h3 id="_3-3-2运行init"><a href="#_3-3-2运行init" class="header-anchor">#</a> 3.3.2运行init</h3> <p>init 进程是系统所有进程的起点，你可以把它比拟成系统所有进程的老祖宗，没有这个进程，系统中任何进程都不会启动。</p> <p>init 程序首先是需要读取配置文件 /etc/inittab。</p> <p>运行级别</p> <p>许多程序需要开机启动。它们在Windows叫做&quot;服务&quot;（service），在Linux就叫做&quot;守护进程&quot;（daemon）。</p> <p>init进程的一大任务，就是去运行这些开机启动的程序。</p> <p>但是，不同的场合需要启动不同的程序，比如用作服务器时，需要启动Apache，用作桌面就不需要。</p> <p>Linux允许为不同的场合，分配不同的开机启动程序，这就叫做&quot;运行级别&quot;（runlevel）。也就是说，启动时根据&quot;运行级别&quot;，确定要运行哪些程序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Linux系统有7个运行级别(runlevel)：
+• 运行级别0：系统停机状态，系统默认运行级别不能设为0，否则不能正常启动
+• 运行级别1：单用户工作状态，root权限，用于系统维护，禁止远程登陆
+• 运行级别2：多用户状态(没有NFS)
+• 运行级别3：完全的多用户状态(有NFS)，登陆后进入控制台命令行模式
+• 运行级别4：系统未使用，保留
+• 运行级别5：X11控制台，登陆后进入图形GUI模式
+• 运行级别6：系统正常关闭并重启，默认运行级别不能设为6，否则不能正常启动
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_3-3-3系统初始化"><a href="#_3-3-3系统初始化" class="header-anchor">#</a> 3.3.3系统初始化</h3> <p>在init的配置文件中有这么一行： si::sysinit:/etc/rc.d/rc.sysinit　它调用执行了/etc/rc.d/rc.sysinit，而rc.sysinit是一个bash shell的脚本，它主要是完成一些系统初始化的工作，rc.sysinit是每一个运行级别都要首先运行的重要脚本。</p> <p>它主要完成的工作有：激活交换分区，检查磁盘，加载硬件模块以及其它一些需要优先执行任务。</p> <p>l5:5:wait:/etc/rc.d/rc 5</p> <p>这一行表示以5为参数运行/etc/rc.d/rc，/etc/rc.d/rc是一个Shell脚本，它接受5作为参数，去执行/etc/rc.d/rc5.d/目录下的所有的rc启动脚本，/etc/rc.d/rc5.d/目录中的这些启动脚本实际上都是一些连接文件，而不是真正的rc启动脚本，真正的rc启动脚本实际上都是放在/etc/rc.d/init.d/目录下。
+而这些rc启动脚本有着类似的用法，它们一般能接受start、stop、restart、status等参数。</p> <p>/etc/rc.d/rc5.d/中的rc启动脚本通常是K或S开头的连接文件，对于以 S 开头的启动脚本，将以start参数来运行。
+而如果发现存在相应的脚本也存在K打头的连接，而且已经处于运行态了(以/var/lock/subsys/下的文件作为标志)，则将首先以stop为参数停止这些已经启动了的守护进程，然后再重新运行。</p> <p>这样做是为了保证是当init改变运行级别时，所有相关的守护进程都将重启。</p> <p>至于在每个运行级中将运行哪些守护进程，用户可以通过chkconfig或setup中的&quot;System Services&quot;来自行设定。</p> <h3 id="_3-3-4建立终端"><a href="#_3-3-4建立终端" class="header-anchor">#</a> 3.3.4建立终端</h3> <p>rc执行完毕后，返回init。这时基本系统环境已经设置好了，各种守护进程也已经启动了。</p> <p>init接下来会打开6个终端，以便用户登录系统。在inittab中的以下6行就是定义了6个终端：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1:2345:respawn:/sbin/mingetty tty1
+2:2345:respawn:/sbin/mingetty tty2
+3:2345:respawn:/sbin/mingetty tty3
+4:2345:respawn:/sbin/mingetty tty4
+5:2345:respawn:/sbin/mingetty tty5
+6:2345:respawn:/sbin/mingetty tty6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>从上面可以看出在2、3、4、5的运行级别中都将以respawn方式运行mingetty程序，mingetty程序能打开终端、设置模式。
+同时它会显示一个文本登录界面，这个界面就是我们经常看到的登录界面，在这个登录界面中会提示用户输入用户名，而用户输入的用户将作为参数传给login程序来验证用户的身份。</p> <h3 id="_3-3-5用户登录系统"><a href="#_3-3-5用户登录系统" class="header-anchor">#</a> 3.3.5用户登录系统</h3> <p>一般来说，用户的登录方式有三种：</p> <p>• （1）命令行登录</p> <p>• （2）ssh登录</p> <p>• （3）图形界面登录</p> <p>对于运行级别为5的图形方式用户来说，他们的登录是通过一个图形化的登录界面。登录成功后可以直接进入 KDE、Gnome 等窗口管理器。
+而本文主要讲的还是文本方式登录的情况：当我们看到mingetty的登录界面时，我们就可以输入用户名和密码来登录系统了。
+Linux 的账号验证程序是 login，login 会接收 mingetty 传来的用户名作为用户名参数。</p> <p>然后 login 会对用户名进行分析：如果用户名不是 root，且存在 /etc/nologin 文件，login 将输出 nologin 文件的内容，然后退出。
+这通常用来系统维护时防止非root用户登录。只有/etc/securetty中登记了的终端才允许 root 用户登录，如果不存在这个文件，则 root 用户可以在任何终端上登录。
+/etc/usertty文件用于对用户作出附加访问限制，如果不存在这个文件，则没有其他限制。</p> <p>&lt;=&quot;&quot; p=&quot;&quot; style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none;&quot;&gt;</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718131527.png" alt=""></p> <h2 id="_3-4-系统目录结构"><a href="#_3-4-系统目录结构" class="header-anchor">#</a> 3.4 系统目录结构</h2> <p>登录系统后，在当前命令窗口下输入命令：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> ls / 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>会看到如下图所示:</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718131639.png" alt=""></p> <p>树状目录结构：</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718131655.png" alt=""></p> <h3 id="_3-4-1-目录的解释："><a href="#_3-4-1-目录的解释：" class="header-anchor">#</a> 3.4.1 目录的解释：</h3> <p>• /bin：</p> <p>bin是Binary的缩写, 这个目录存放着最经常使用的命令。</p> <p>• /boot：</p> <p>这里存放的是启动Linux时使用的一些核心文件，包括一些连接文件以及镜像文件。</p> <p>• /dev ：</p> <p>dev是Device(设备)的缩写, 该目录下存放的是Linux的外部设备，在Linux中访问设备的方式和访问文件的方式是相同的。</p> <p>• /etc：</p> <p>这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p> <p>• /home：</p> <p>用户的主目录，在Linux中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的。</p> <p>• /lib：</p> <p>这个目录里存放着系统最基本的动态连接共享库，其作用类似于Windows里的DLL文件。几乎所有的应用程序都需要用到这些共享库。</p> <p>• /lost+found：</p> <p>这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</p> <p>• /media：</p> <p>linux系统会自动识别一些设备，例如U盘、光驱等等，当识别后，linux会把识别的设备挂载到这个目录下。</p> <p>• /mnt：</p> <p>系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在/mnt/上，然后进入该目录就可以查看光驱里的内容了。</p> <p>• /opt：</p> <p>这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</p> <p>• /proc：</p> <p>这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。
+这个目录的内容不在硬盘上而是在内存里，我们也可以直接修改里面的某些文件，比如可以通过下面的命令来屏蔽主机的ping命令，使别人无法ping你的机器：
+echo 1 &gt; /proc/sys/net/ipv4/icmp_echo_ignore_all</p> <p>• /root：</p> <p>该目录为系统管理员，也称作超级权限者的用户主目录。</p> <p>• /sbin：</p> <p>s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</p> <p>• /selinux：</p> <p>这个目录是Redhat/CentOS所特有的目录，Selinux是一个安全机制，类似于windows的防火墙，但是这套机制比较复杂，这个目录就是存放selinux相关的文件的。</p> <p>• /srv：</p> <p>该目录存放一些服务启动之后需要提取的数据。</p> <p>• /sys：</p> <p>这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统 sysfs 。</p> <p>sysfs文件系统集成了下面3种文件系统的信息：针对进程信息的proc文件系统、针对设备的devfs文件系统以及针对伪终端的devpts文件系统。</p> <p>该文件系统是内核设备树的一个直观反映。</p> <p>当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建。</p> <p>• /tmp：</p> <p>这个目录是用来存放一些临时文件的。</p> <p>• /usr：</p> <p>这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files目录。</p> <p>• /usr/bin：</p> <p>系统用户使用的应用程序。</p> <p>• /usr/sbin：</p> <p>超级用户使用的比较高级的管理程序和系统守护程序。</p> <p>• /usr/src：</p> <p>内核源代码默认的放置目录。</p> <p>• /var：</p> <p>这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p> <p>• /run：</p> <p>是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。如果你的系统上有 /var/run 目录，应该让它指向 run。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>在 Linux 系统中，有几个目录是比较重要的，平时需要注意不要误删除或者随意更改内部文件。
+/etc： 上边也提到了，这个是系统中的配置文件，如果你更改了该目录下的某个文件可能会导致系统不能启动。
+/bin, /sbin, /usr/bin, /usr/sbin: 这是系统预设的执行文件的放置目录，比如 ls 就是在/bin/ls 目录下的。
+值得提出的是，/bin, /usr/bin 是给系统用户使用的指令（除root外的通用户），而/sbin, /usr/sbin 则是给root使用的指令。 
+/var： 这是一个非常重要的目录，系统上跑了很多程序，那么每个程序都会有相应的日志产生，而这些日志就被记录到这个目录下，具体在/var/log 目录下，另外mail的预设放置也是在这里。
+
+在 Linux 或 Unix 操作系统中，所有的文件和目录都被组织成以一个根节点开始的倒置的树状结构。
+文件系统的最顶层是由根目录开始的，系统使用 / 来表示根目录。在根目录之下的既可以是目录，也可以是文件，而每一个目录中又可以包含子目录文件。如此反复就可以构成一个庞大的文件系统。
+在Linux文件系统中有两个特殊的目录，一个用户所在的工作目录，也叫当前目录，可以使用一个点 . 来表示；另一个是当前目录的上一级目录，也叫父目录，可以使用两个点 .. 来表示。
+•  . ：代表当前的目录，也可以使用 ./ 来表示；
+•  .. ：代表上一层目录，也可以 ../ 来代表。
+如果一个目录或文件名以一个点 . 开始，表示这个目录或文件是一个隐藏目录或文件(如：.bashrc)。即以默认方式查找时，不显示该目录或文件。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_3-4-2-目录作用分类"><a href="#_3-4-2-目录作用分类" class="header-anchor">#</a> 3.4.2 目录作用分类</h3> <p><strong>系统启动必须：</strong></p> <p>• /boot：存放的启动Linux 时使用的内核文件，包括连接文件以及镜像文件。</p> <p>• /etc：存放所有的系统需要的配置文件和子目录列表，更改目录下的文件可能会导致系统不能启动。</p> <p>• /lib：存放基本代码库（比如c++库），其作用类似于Windows里的DLL文件。几乎所有的应用程序都需要用到这些共享库。</p> <p>• /sys： 这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统 sysfs 。sysfs文件系统集成了下面3种文件系统的信息：针对进程信息的proc文件系统、针对设备的devfs文件系统以及针对伪终端的devpts文件系统。该文件系统是内核设备树的一个直观反映。当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中</p> <p><strong>指令集合：</strong></p> <p>• /bin：存放着最常用的程序和指令</p> <p>• /sbin：只有系统管理员能使用的程序和指令。</p> <p><strong>外部文件管理：</strong></p> <p>• /dev ：Device(设备)的缩写, 存放的是Linux的外部设备。注意：在Linux中访问设备和访问文件的方式是相同的。</p> <p>• /media：类windows的其他设备，例如U盘、光驱等等，识别后linux会把设备放到这个目录下。</p> <p>• /mnt：临时挂载别的文件系统的，我们可以将光驱挂载在/mnt/上，然后进入该目录就可以查看光驱里的内容了。</p> <p><strong>临时文件：</strong></p> <p>• /run：是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。如果你的系统上有 /var/run 目录，应该让它指向 run。</p> <p>• /lost+found：一般情况下为空的，系统非法关机后，这里就存放一些文件。</p> <p>• /tmp：这个目录是用来存放一些临时文件的。</p> <p><strong>账户：</strong></p> <p>• /root：系统管理员的用户主目录。</p> <p>• /home：用户的主目录，以用户的账号命名的。</p> <p>• /usr：用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files目录。</p> <p>• /usr/bin：系统用户使用的应用程序与指令。</p> <p>• /usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序。</p> <p>• /usr/src：内核源代码默认的放置目录。</p> <p><strong>运行过程中要用：</strong>
+• /var：存放经常修改的数据，比如程序运行的日志文件（/var/log 目录下）。</p> <p>• /proc：管理内存空间！虚拟的目录，是系统内存的映射，我们可以直接访问这个目录来，获取系统信息。这个目录的内容不在硬盘上而是在内存里，我们也可以直接修改里面的某些文件来做修改。</p> <p><strong>扩展用的：</strong></p> <p>• /opt：默认是空的，我们安装额外软件可以放在这个里面。</p> <p>• /srv：存放服务启动后需要提取的数据（不用服务器就是空）</p> <h2 id="_3-5-远程登录"><a href="#_3-5-远程登录" class="header-anchor">#</a> 3.5 远程登录</h2> <p>Linux系统中是通过ssh服务实现的远程登录功能，默认ssh服务端口号为 22。</p> <h2 id="_3-5-1-终端利用ssh登录远程服务器"><a href="#_3-5-1-终端利用ssh登录远程服务器" class="header-anchor">#</a> 3.5.1 终端利用ssh登录远程服务器</h2> <p>安装ssh：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yum install ssh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>启动ssh：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>service sshd start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>登录远程服务器：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ssh -p 50022 my@127.0.0.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输入密码：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>my@127.0.0.1:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>-p 后面是端口</p> <p>my 是服务器用户名</p> <p>127.0.0.1 是服务器 ip</p> <p>回车输入密码即可登录</p> <h2 id="_3-5-2-mac终端连接远程服务器"><a href="#_3-5-2-mac终端连接远程服务器" class="header-anchor">#</a> 3.5.2 Mac终端连接远程服务器</h2> <p>打开终端
+输入命令：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ssh -p 22 root@123.46.167.91 ( ssh -p 端口号 用户名@ip)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>或</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ssh root@123.46.167.91 ( ssh 用户名@ip)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输入密码</p> <p>接连成功</p> <h2 id="_3-6-文件基本属性"><a href="#_3-6-文件基本属性" class="header-anchor">#</a> 3.6 文件基本属性</h2> <p>使用ll或者ls –l命令来显示一个文件的属性以及文件所属的用户和组</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@www /<span class="token punctuation">]</span><span class="token comment"># ls -l</span>
+total <span class="token number">64</span>
+dr-xr-xr-x   <span class="token number">2</span> root root <span class="token number">4096</span> Dec <span class="token number">14</span>  <span class="token number">2012</span> bin
+dr-xr-xr-x   <span class="token number">4</span> root root <span class="token number">4096</span> Apr <span class="token number">19</span>  <span class="token number">2012</span> boot
+……
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_3-6-1-属性介绍"><a href="#_3-6-1-属性介绍" class="header-anchor">#</a> 3.6.1 属性介绍</h3> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718134753.png" alt=""></p> <p>每个文件的属性由左边第一部分的10个字符来确定</p> <p>从左至右用0-9这些数字来表示。
+第0位确定文件类型，第1-3位确定属主（该文件的所有者）拥有该文件的权限。
+第4-6位确定属组（所有者的同组用户）拥有该文件的权限，第7-9位确定其他用户拥有该文件的权限。</p> <h4 id="第一个字符代表这个文件是目录、文件或链接文件等等。"><a href="#第一个字符代表这个文件是目录、文件或链接文件等等。" class="header-anchor">#</a> 第一个字符代表这个文件是目录、文件或链接文件等等。</h4> <p>• 当为[ d ]则是目录</p> <p>• 当为[ - ]则是文件；</p> <p>• 若是[ l ]则表示为链接文档(link file)；</p> <p>• 若是[ b ]则表示为装置文件里面的可供储存的接口设备(可随机存取装置)；</p> <p>若是[ c ]则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。</p> <h4 id="接下来的字符中，以三个为一组，且均为『rwx』-的三个参数的组合。"><a href="#接下来的字符中，以三个为一组，且均为『rwx』-的三个参数的组合。" class="header-anchor">#</a> 接下来的字符中，以三个为一组，且均为『rwx』 的三个参数的组合。</h4> <p>其中，[ r ]代表可读(read)、[ w ]代表可写(write)、[ x ]代表可执行(execute)。如果没有权限，就会出现减号[ - ]。</p> <h3 id="_3-6-2-linux文件属主和属组"><a href="#_3-6-2-linux文件属主和属组" class="header-anchor">#</a> 3.6.2 Linux文件属主和属组</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">[</span>root@www /<span class="token punctuation">]</span><span class="token comment"># ls -l</span>
+total <span class="token number">64</span>
+drwxr-xr-x <span class="token number">2</span> root  root  <span class="token number">4096</span> Feb <span class="token number">15</span> <span class="token number">14</span>:46 <span class="token function">cron</span>
+drwxr-xr-x <span class="token number">3</span> mysql mysql <span class="token number">4096</span> Apr <span class="token number">21</span>  <span class="token number">2014</span> mysql
+……
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>对于文件来说，它都有一个特定的所有者，也就是对该文件具有所有权的用户。</p> <p>同时，在Linux系统中，用户是按组分类的，一个用户属于一个或多个组。</p> <p>文件所有者以外的用户又可以分为文件所有者的同组用户和其他用户。</p> <p>因此，Linux系统按文件所有者、文件所有者同组用户和其他用户来规定了不同的文件访问权限。</p> <p>在以上实例中，mysql 文件是一个目录文件，属主和属组都为 mysql，属主有可读、可写、可执行的权限；与属主同组的其他用户有可读和可执行的权限；其他用户也有可读和可执行的权限。</p> <p>对于 root 用户来说，一般情况下，文件的权限对其不起作用。</p> <h3 id="_3-6-3-更改文件属性"><a href="#_3-6-3-更改文件属性" class="header-anchor">#</a> 3.6.3 更改文件属性</h3> <p>1、chgrp：更改文件属组</p> <p>语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>chgrp [-R] 属组名 文件名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>参数选项</p> <p>• -R：递归更改文件属组，就是在更改某个目录文件的属组时，如果加上-R的参数，那么该目录下的所有文件的属组都会更改。</p> <p>2、chown：更改文件属主，也可以同时更改文件属组</p> <p>语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>chown [–R] 属主名 文件名
+chown [-R] 属主名：属组名 文件名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>进入 /root 目录（~）将install.log的拥有者改为bin这个账号：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~] cd ~
+[root@www ~]# chown bin install.log
+[root@www ~]# ls -l
+-rw-r--r--  1 bin  users 68495 Jun 25 08:53 install.log
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>将install.log的拥有者与群组改回为root：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~]# chown root:root install.log
+[root@www ~]# ls -l
+-rw-r--r--  1 root root 68495 Jun 25 08:53 install.log
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>3、chmod：更改文件9个属性</p> <p>Linux文件属性有两种设置方法，一种是数字，一种是符号。</p> <p>Linux文件的基本权限就有九个，分别是owner/group/others三种身份各有自己的read/write/execute权限。</p> <p>先复习一下刚刚上面提到的数据：文件的权限字符为：『-rwxrwxrwx』， 这九个权限是三个三个一组的！其中，我们可以使用数字来代表各个权限，各权限的分数对照表如下：</p> <p>• r:4</p> <p>• w:2</p> <p>• x:1</p> <p>每种身份(owner/group/others)各自的三个权限(r/w/x)分数是需要累加的，例如当权限为： [-rwxrwx---] 分数则是：</p> <p>• owner = rwx = 4+2+1 = 7</p> <p>• group = rwx = 4+2+1 = 7</p> <p>• others= --- = 0+0+0 = 0</p> <p>所以等一下我们设定权限的变更时，该文件的权限数字就是770啦！变更权限的指令chmod的语法是这样的：</p> <p>chmod [-R] xyz 文件或目录</p> <p>选项与参数：</p> <p>• xyz : 就是刚刚提到的数字类型的权限属性，为 rwx 属性数值的相加。</p> <p>• -R : 进行递归(recursive)的持续变更，亦即连同次目录下的所有文件都会变更</p> <p>举例来说，如果要将.bashrc这个文件所有的权限都设定启用，那么命令如下：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">[</span>root@www ~<span class="token punctuation">]</span><span class="token comment"># ls -al .bashrc</span>
+-rw-r--r--  <span class="token number">1</span> root root <span class="token number">395</span> Jul  <span class="token number">4</span> <span class="token number">11</span>:45 .bashrc
+<span class="token punctuation">[</span>root@www ~<span class="token punctuation">]</span><span class="token comment"># chmod 777 .bashrc</span>
+<span class="token punctuation">[</span>root@www ~<span class="token punctuation">]</span><span class="token comment"># ls -al .bashrc</span>
+-rwxrwxrwx  <span class="token number">1</span> root root <span class="token number">395</span> Jul  <span class="token number">4</span> <span class="token number">11</span>:45 .bashrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>那如果要将权限变成 -rwxr-xr-- 呢？那么权限的分数就成为 [4+2+1][4+0+1][4+0+0]=754。</p> <p>符号类型改变文件权限</p> <h2 id="_3-7-文件与目录管理"><a href="#_3-7-文件与目录管理" class="header-anchor">#</a> 3.7 文件与目录管理</h2> <h3 id="_3-7-1-ls-列出目录及文件名"><a href="#_3-7-1-ls-列出目录及文件名" class="header-anchor">#</a> 3.7.1 ls: 列出目录及文件名</h3> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-a ：全部的文件，连同隐藏文件( 开头为 . 的文件) 一起列出来(常用)
+-d ：仅列出目录本身，而不是列出目录内的文件数据(常用)
+-l ：长数据串列出，包含文件的属性与权限等等数据；(常用)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>例，将家目录下的所有文件列出来(含属性与隐藏档):</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">[</span>root@www ~<span class="token punctuation">]</span><span class="token comment"># ls -al ~</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-7-2-cd：切换目录"><a href="#_3-7-2-cd：切换目录" class="header-anchor">#</a> 3.7.2 cd：切换目录</h3> <p>Change Directory的缩写</p> <h3 id="_3-7-3-pwd：显示目前的目录"><a href="#_3-7-3-pwd：显示目前的目录" class="header-anchor">#</a> 3.7.3 pwd：显示目前的目录</h3> <p>Print Working Directory 的缩写</p> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-P ：显示出确实的路径，而非使用连结 (link) 路径。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>实例显示出实际的工作目录，而非连结档本身的目录名而已:</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">[</span>root@www ~<span class="token punctuation">]</span><span class="token comment"># cd /var/mail   &lt;==注意，/var/mail是一个连结档</span>
+<span class="token punctuation">[</span>root@www mail<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/var/mail         <span class="token operator">&lt;</span><span class="token operator">==</span>列出目前的工作目录
+<span class="token punctuation">[</span>root@www mail<span class="token punctuation">]</span><span class="token comment"># pwd -P</span>
+/var/spool/mail   <span class="token operator">&lt;</span><span class="token operator">==</span>怎么回事？有没有加 -P 差很多～
+<span class="token punctuation">[</span>root@www mail<span class="token punctuation">]</span><span class="token comment"># ls -ld /var/mail</span>
+lrwxrwxrwx <span class="token number">1</span> root root <span class="token number">10</span> Sep  <span class="token number">4</span> <span class="token number">17</span>:54 /var/mail -<span class="token operator">&gt;</span> spool/mail
+<span class="token comment"># 看到这里应该知道为啥了吧？因为 /var/mail 是连结档，连结到 /var/spool/mail ,linux里面的连结档相当于Windows里的快捷方式。</span>
+<span class="token comment"># 所以，加上 pwd -P 的选项后，会不以连结档的数据显示，而是显示正确的完整路径啊！</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_3-7-4-mkdir：创建一个新的目录"><a href="#_3-7-4-mkdir：创建一个新的目录" class="header-anchor">#</a> 3.7.4 mkdir：创建一个新的目录</h3> <p>make directory</p> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-m ：配置文件的权限喔！直接配置，不需要看默认权限 (umask) 的脸色～
+-p ：帮助你直接将所需要的目录(包含上一级目录)递归创建起来！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>实例：请到/tmp底下尝试创建数个新目录看看：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~]# cd /tmp
+[root@www tmp]# mkdir test    &lt;==创建一名为 test 的新目录
+[root@www tmp]# mkdir test1/test2/test3/test4
+mkdir: cannot create directory `test1/test2/test3/test4': 
+No such file or directory       &lt;== 没办法直接创建此目录啊！
+[root@www tmp]# mkdir -p test1/test2/test3/test4
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>加了这个 -p 的选项，可以自行帮你创建多层目录！</p> <p>实例：创建权限为 rwx--x--x 的目录。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www tmp]# mkdir -m 711 test2
+[root@www tmp]# ls -l
+drwxr-xr-x  3 root  root 4096 Jul 18 12:50 test
+drwxr-xr-x  3 root  root 4096 Jul 18 12:53 test1
+drwx--x--x  2 root  root 4096 Jul 18 12:54 test2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_3-7-5-rmdir：删除一个空的目录"><a href="#_3-7-5-rmdir：删除一个空的目录" class="header-anchor">#</a> 3.7.5 rmdir：删除一个空的目录</h3> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-p ：连同上一级『空的』目录也一起删除
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>删除 runoob 目录</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www tmp]# rmdir runoob/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将 mkdir 实例中创建的目录(/tmp 底下)删除掉！</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www tmp]# ls -l   &lt;==看看有多少目录存在？
+drwxr-xr-x  3 root  root 4096 Jul 18 12:50 test
+drwxr-xr-x  3 root  root 4096 Jul 18 12:53 test1
+drwx--x--x  2 root  root 4096 Jul 18 12:54 test2
+[root@www tmp]# rmdir test   &lt;==可直接删除掉，没问题
+[root@www tmp]# rmdir test1  &lt;==因为尚有内容，所以无法删除！
+rmdir: `test1': Directory not empty
+[root@www tmp]# rmdir -p test1/test2/test3/test4
+[root@www tmp]# ls -l        &lt;==您看看，底下的输出中test与test1不见了！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>drwx--x--x  2 root  root 4096 Jul 18 12:54 test2
+利用 -p 这个选项，立刻就可以将 test1/test2/test3/test4 一次删除。</p> <p>不过要注意的是，这个 rmdir 仅能删除空的目录，你可以使用 rm 命令来删除非空目录。</p> <h3 id="_3-7-6-cp-复制文件或目录"><a href="#_3-7-6-cp-复制文件或目录" class="header-anchor">#</a> 3.7.6 cp: 复制文件或目录</h3> <p>语法:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~]# cp [-adfilprsu] 来源档(source) 目标档(destination)
+[root@www ~]# cp [options] source1 source2 source3 .... directory
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-a：相当於 -pdr 的意思，至於 pdr 请参考下列说明；(常用)
+
+-d：若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身；
+
+-f：为强制(force)的意思，若目标文件已经存在且无法开启，则移除后再尝试一次；
+
+-i：若目标档(destination)已经存在时，在覆盖时会先询问动作的进行(常用)
+
+-l：进行硬式连结(hard link)的连结档创建，而非复制文件本身；
+
+-p：连同文件的属性一起复制过去，而非使用默认属性(备份常用)；
+
+-r：递归持续复制，用於目录的复制行为；(常用)
+
+-s：复制成为符号连结档 (symbolic link)，亦即『捷径』文件；
+
+-u：若 destination 比 source 旧才升级 destination ！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>用 root 身份，将 root 目录下的 .bashrc 复制到 /tmp 下，并命名为 bashrc</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~]# cp ~/.bashrc /tmp/bashrc
+[root@www ~]# cp -i ~/.bashrc /tmp/bashrc
+cp: overwrite `/tmp/bashrc'? n  &lt;==n不覆盖，y为覆盖
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_3-7-7-rm-移除文件或目录"><a href="#_3-7-7-rm-移除文件或目录" class="header-anchor">#</a> 3.7.7 rm: 移除文件或目录</h3> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-f ：就是 force 的意思，忽略不存在的文件，不会出现警告信息；
+-i ：互动模式，在删除前会询问使用者是否动作
+-r ：递归删除啊！最常用在目录的删除了！这是非常危险的选项！！！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>将刚刚在 cp 的实例中创建的 bashrc 删除掉！</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">[</span>root@www tmp<span class="token punctuation">]</span><span class="token comment"># rm -i bashrc</span>
+rm: remove regular <span class="token function">file</span> `bashrc'? y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>如果加上 -i 的选项就会主动询问喔，避免你删除到错误的档名！</p> <h3 id="_3-7-8-mv-移动文件与目录，或修改文件与目录的名称"><a href="#_3-7-8-mv-移动文件与目录，或修改文件与目录的名称" class="header-anchor">#</a> 3.7.8 mv: 移动文件与目录，或修改文件与目录的名称</h3> <p>选项与参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-f ：force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖；
+-i ：若目标文件 (destination) 已经存在时，就会询问是否覆盖！
+-u ：若目标文件已经存在，且 source 比较新，才会升级 (update)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>复制一文件，创建一目录，将文件移动到目录中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www ~]# cd /tmp
+[root@www tmp]# cp ~/.bashrc bashrc
+[root@www tmp]# mkdir mvtest
+[root@www tmp]# mv bashrc mvtest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>将某个文件移动到某个目录去，就是这样做！</p> <p>将刚刚的目录名称更名为 mvtest2</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@www tmp]# mv mvtest mvtest2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-7-9-查看文件内容"><a href="#_3-7-9-查看文件内容" class="header-anchor">#</a> 3.7.9 查看文件内容</h3> <p>cat  由第一行开始显示文件内容</p> <p>tac  从最后一行开始显示，可以看出 tac 是 cat 的倒着写！</p> <p>nl   显示的时候，顺道输出行号！</p> <p>more 一页一页的显示文件内容</p> <p>less 与 more 类似，但是比 more 更好的是，他可以往前翻页！</p> <p>head 只看头几行</p> <p>tail 只看尾巴几行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>可以使用 man [命令]来查看各个命令的使用文档，如 ：man cp。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_3-8-用户和用户组管理"><a href="#_3-8-用户和用户组管理" class="header-anchor">#</a> 3.8 用户和用户组管理</h2> <h2 id="_3-9-磁盘管理"><a href="#_3-9-磁盘管理" class="header-anchor">#</a> 3.9  磁盘管理</h2> <p>df：列出文件系统的整体磁盘使用量</p> <p>du：检查磁盘空间使用量</p> <p>fdisk：用于磁盘分区</p> <h2 id="_3-10-vi-vim"><a href="#_3-10-vi-vim" class="header-anchor">#</a> 3.10 vi/vim</h2> <p>所有的 Unix Like 系统都会内建 vi 文书编辑器，Vim是从 vi 发展出来的一个文本编辑器。</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718142729.png" alt=""></p> <p>:w	将编辑的数据写入硬盘档案中(常用)
+:w!	若文件属性为『只读』时，强制写入该档案。不过，到底能不能写入， 还是跟你对该档案的档案权限有关啊！
+:q	离开 vi (常用)
+:q!	若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案。
+注意一下啊，那个惊叹号 (!) 在 vi 当中，常常具有『强制』的意思～	
+:wq	储存后离开，若为 :wq! 则为强制储存后离开 (常用)</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718143032.png" alt=""></p> <h2 id="_3-11-yum-命令"><a href="#_3-11-yum-命令" class="header-anchor">#</a> 3.11 yum 命令</h2> <p>前端软件包管理器。基於RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。</p> <p>apt/yum/homebrew----ubuntu/centOs/mac ：包管理器对应系统</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.列出所有可更新的软件清单命令：yum check-update
+2.更新所有软件命令：yum update
+3.仅安装指定的软件命令：yum install &lt;package_name&gt;
+4.仅更新指定的软件命令：yum update &lt;package_name&gt;
+5.列出所有可安裝的软件清单命令：yum list
+6.删除软件包命令：yum remove &lt;package_name&gt;
+7.查找软件包 命令：yum search &lt;keyword&gt;
+8.清除缓存命令:
+yum clean packages: 清除缓存目录下的软件包
+yum clean headers: 清除缓存目录下的 headers
+yum clean oldheaders: 清除缓存目录下旧的 headers
+yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章</h2> <p>关于SSH 22端口的来历，及其相关配置
+https://baijiahao.baidu.com/s?id=1613129005662609247&amp;wfr=spider&amp;for=pc</p> <p>Linux 文件与目录管理
+https://www.runoob.com/linux/linux-file-content-manage.html</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/操作系统/操作系统.html" class="prev">
+        2.操作系统（进阶）
+      </a></span> <span class="next"><a href="/操作系统/面试题.html">
+        X.面试题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/60.c370307e.js" defer></script>
+  </body>
+</html>

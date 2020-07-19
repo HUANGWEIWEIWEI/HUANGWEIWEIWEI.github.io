@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>X. HTML相关面试题 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/24.f1868055.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/37.edac8bc3.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/57.9e95edc3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/60.c370307e.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/70.b73cfa4e.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/8.f8cdd7e6.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/html%E7%9B%B8%E5%85%B3/" aria-current="page" class="sidebar-link">1. HTML/HTML5概述</a></li><li><a href="/html相关/html.html" class="sidebar-link">2. HTML</a></li><li><a href="/html相关/html5.html" class="sidebar-link">3. HTML5</a></li><li><a href="/html相关/面试题.html" class="active sidebar-link">X. HTML相关面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html相关/面试题.html#_1-doctype的作用？" class="sidebar-link">1. DOCTYPE的作用？</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html相关/面试题.html#doctype（文档类型）的定义" class="sidebar-link">DOCTYPE（文档类型）的定义</a></li><li class="sidebar-sub-header"><a href="/html相关/面试题.html#doctype的作用" class="sidebar-link">DOCTYPE的作用</a></li><li class="sidebar-sub-header"><a href="/html相关/面试题.html#doctype的使用" class="sidebar-link">DOCTYPE的使用</a></li><li class="sidebar-sub-header"><a href="/html相关/面试题.html#总结：" class="sidebar-link">总结：</a></li></ul></li><li class="sidebar-sub-header"><a href="/html相关/面试题.html#_2-原生html写ul和li" class="sidebar-link">2. 原生html写ul和li</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="x-html相关面试题"><a href="#x-html相关面试题" class="header-anchor">#</a> X. HTML相关面试题</h1> <h2 id="_1-doctype的作用？"><a href="#_1-doctype的作用？" class="header-anchor">#</a> 1. DOCTYPE的作用？</h2> <h3 id="doctype（文档类型）的定义"><a href="#doctype（文档类型）的定义" class="header-anchor">#</a> DOCTYPE（文档类型）的定义</h3>
+&lt;!DOCTYPE&gt;标签是一种标准通用标记语言的文档类型声明，它的目的是要告诉标准通用标记语言解析器，它应该使用什么样的文档类型定义（DTD）来解析文档。
+&lt;!DOCTYPE&gt; 声明必须是 HTML 文档的第一行，位于 &lt;html&gt; 标签之前。
+<h3 id="doctype的作用"><a href="#doctype的作用" class="header-anchor">#</a> DOCTYPE的作用</h3> <p>声明文档的解析类型(document.compatMode)，避免浏览器的怪异模式。</p> <blockquote><p>document.compatMode：
+BackCompat：怪异模式，浏览器使用自己的怪异模式解析渲染页面。
+CSS1Compat：标准模式，浏览器使用W3C的标准解析渲染页面。</p> <p>这个属性会被浏览器识别并使用，但是如果你的页面没有DOCTYPE的声明，那么compatMode默认就是BackCompat
+浏览器按照自己的方式解析渲染页面，那么，在不同的浏览器就会显示不同的样式。这当然是不行的。
+如果你的页面添加了&lt;!DOCTYPE html&gt;，那么，那么就等同于开启了标准模式
+那么浏览器就得老老实实的按照W3C的标准解析渲染页面，这样一来，你的页面在所有的浏览器里显示的就都是一个样子了。</p></blockquote> <h3 id="doctype的使用"><a href="#doctype的使用" class="header-anchor">#</a> DOCTYPE的使用</h3>
+&lt;!DOCTYPE&gt; 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。
+<p>在 HTML 4.01 中，&lt;!DOCTYPE&gt; 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</p> <p>HTML5 不基于 SGML，所以不需要引用 DTD。</p> <p>在 HTML 4.01 中有三种 &lt;!DOCTYPE&gt; 声明。在 HTML5 中只有一种：&lt;!DOCTYPE html&gt;</p>
+&lt;!DOCTYPE&gt; 声明没有结束标签。
+&lt;!DOCTYPE&gt; 声明对大小写不敏感。
+<p>HTML 4.01 Strict
+该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</p> <p>HTML 4.01 Transitional
+该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</p> <p>HTML 4.01 Frameset
+该 DTD 等同于 HTML 4.01 Transitional，但允许框架集内容。
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot;
+&quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;</p> <h3 id="总结："><a href="#总结：" class="header-anchor">#</a> 总结：</h3> <p>必须要加&lt;!DOCTYPE&gt;声明，有时候不加才可以正常显示网页是因为你的代码不符合规范，H5就严格按照H5的代码规范来写，就不会有问题，很多是因为缺少部分属性，例如没有指定css中容器尺寸等等。</p> <h2 id="_2-原生html写ul和li"><a href="#_2-原生html写ul和li" class="header-anchor">#</a> 2. 原生html写ul和li</h2> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html相关/html5.html" class="prev">
+        3. HTML5
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/24.f1868055.js" defer></script>
+  </body>
+</html>

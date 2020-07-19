@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown借鉴 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/8.f8cdd7e6.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/24.f1868055.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/37.edac8bc3.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/57.9e95edc3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/60.c370307e.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/70.b73cfa4e.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link router-link-active">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link router-link-active">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Git/" aria-current="page" class="sidebar-link">git</a></li><li><a href="/Git/Git.html" class="sidebar-link">git的使用</a></li><li><a href="/Git/开源协议.html" class="sidebar-link">开源协议</a></li><li><a href="/Git/Markdown借鉴.html" class="active sidebar-link">Markdown借鉴</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Git/Markdown借鉴.html#这是一个二级标题" class="sidebar-link">这是一个二级标题</a></li><li class="sidebar-sub-header"><a href="/Git/Markdown借鉴.html#二级标题" class="sidebar-link">二级标题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Git/Markdown借鉴.html#三级标题" class="sidebar-link">三级标题</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="markdown借鉴"><a href="#markdown借鉴" class="header-anchor">#</a> Markdown借鉴</h1> <h1 id="这是一个一级标题"><a href="#这是一个一级标题" class="header-anchor">#</a> 这是一个一级标题</h1> <h2 id="这是一个二级标题"><a href="#这是一个二级标题" class="header-anchor">#</a> 这是一个二级标题</h2> <h1 id="一级标题"><a href="#一级标题" class="header-anchor">#</a> 一级标题</h1> <h2 id="二级标题"><a href="#二级标题" class="header-anchor">#</a> 二级标题</h2> <h3 id="三级标题"><a href="#三级标题" class="header-anchor">#</a> 三级标题</h3> <h4 id="四级标题"><a href="#四级标题" class="header-anchor">#</a> 四级标题</h4> <h5 id="五级标题"><a href="#五级标题" class="header-anchor">#</a> 五级标题</h5> <h6 id="六级标题"><a href="#六级标题" class="header-anchor">#</a> 六级标题</h6> <hr> <hr> <hr> <hr> <ul><li>苹果</li> <li>葡萄</li> <li>榴莲</li></ul> <ol><li>苹果</li> <li>葡萄</li> <li>榴莲</li></ol> <p>强制换行有两种语法：
+1.空格键+空格键+回车键	制表不可用
+2.<br></p> <p><em>斜体</em>或_斜体_
+<strong>粗体</strong> <em><strong>加粗斜体</strong></em> <s>删除线</s> <span style="color:red;">红色</span></p> <p>打开百度<a href="http://www.baidu.com" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">百度一下<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+打开百度[百度一下](http://www.baidu.com title=&quot;百度一下&quot;)</p> <p>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">Google<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="http://www.leanote.com" title="Leanote" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">Leanote<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>以及<a href="http://http://blog.leanote.com/freewalk" title="梵居闹市" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">自己的博客<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="http://www.leanote.com" title="Leanote" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">Leanote 笔记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>是一个不错的<a href="http://http://blog.leanote.com/freewalk" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <p><a href="http://example.com/" target="_blank" rel="https://docs.5102it.cn/CanvasBoard.html">http://example.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="mailto:address@example.com">address@example.com</a></p> <blockquote><p>这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.</p> <p>无意义的占行文字3.
+无意义的占行文字4.</p></blockquote> <blockquote><p>这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.
+无意义的占行文字3.
+无意义的占行文字4.</p></blockquote> <blockquote><p>这是引用的内容</p> <blockquote><p>这是引用的内容</p> <blockquote><blockquote><blockquote><blockquote><p>这是引用的内容dcsdcsdcadcdsaca</p></blockquote></blockquote></blockquote></blockquote></blockquote> <blockquote><p>这是引用的内容</p></blockquote></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>    function MaxNum(x1,x2){
+        if(x1&gt;=x2) return x1;
+        else return x2;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>啦啦啦<code>代码</code>额</p> <div class="footer">
+   © 2004 Foo Corporation
+</div> <table><tr><th rowspan="3">值班人员</th> <th>星期一</th> <th>星期二</th> <th>星期三</th></tr> <tr><td>李强</td> <td>张明</td> <td>王平</td></tr> <tr><td>李强</td> <td>张明</td> <td>王平</td></tr></table> <table><thead><tr><th>Tables</th> <th style="text-align:center;">Are</th> <th style="text-align:right;">Cool</th></tr></thead> <tbody><tr><td>col 3 is</td> <td style="text-align:center;">right-aligned</td> <td style="text-align:right;">$1600</td></tr> <tr><td>col 2 is</td> <td style="text-align:center;">centered</td> <td style="text-align:right;">$12</td></tr> <tr><td>zebra stripes</td> <td style="text-align:center;">are neat</td> <td style="text-align:right;">$1</td></tr></tbody></table> <table><thead><tr><th style="text-align:right;">Tables</th> <th style="text-align:right;">Are</th> <th style="text-align:right;">Cool</th></tr></thead> <tbody><tr><td style="text-align:right;">col 3 is</td> <td style="text-align:right;">right-aligned</td> <td style="text-align:right;">$1600</td></tr> <tr><td style="text-align:right;">col 2 is</td> <td style="text-align:right;">centered</td> <td style="text-align:right;">$12</td></tr> <tr><td style="text-align:right;">zebra stripes</td> <td style="text-align:right;">are neat</td> <td style="text-align:right;">$1</td></tr></tbody></table> <p><img src="https://www.cnblogs.com/images/cnblogs_com/kongw/1443152/o_back1.png" alt="二次元图片" title="二次元图片"></p> <p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p> <p><img src="http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="http://latex.codecogs.com/gif.latex?%5Cprod%20(n_%7Bi%7D)+1" alt="1"></p> <div class="language-flow line-numbers-mode"><pre class="language-flow"><code>st<span class="token operator">=&gt;</span>start<span class="token operator">:</span> 开始
+op<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> My Operation
+cond<span class="token operator">=&gt;</span>condition<span class="token operator">:</span> Yes or No<span class="token operator">?</span>
+e<span class="token operator">=&gt;</span>end
+st<span class="token operator">-</span><span class="token operator">&gt;</span>op<span class="token operator">-</span><span class="token operator">&gt;</span>cond
+<span class="token function">cond</span><span class="token punctuation">(</span>yes<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>e
+<span class="token function">cond</span><span class="token punctuation">(</span>no<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>op
+<span class="token operator">&amp;</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Git/开源协议.html" class="prev">
+        开源协议
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/8.f8cdd7e6.js" defer></script>
+  </body>
+</html>

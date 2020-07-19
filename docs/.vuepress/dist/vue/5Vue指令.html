@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.指令 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/37.edac8bc3.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/24.f1868055.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/57.9e95edc3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/60.c370307e.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/70.b73cfa4e.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/8.f8cdd7e6.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" aria-current="page" class="sidebar-link">1. Vue概述</a></li><li><a href="/vue/2Vue简介.html" class="sidebar-link">2.Vue初识及全家桶简介</a></li><li><a href="/vue/3Vue的安装.html" class="sidebar-link">3.Vue的安装</a></li><li><a href="/vue/4vue基础语法.html" class="sidebar-link">4.vue基础语法</a></li><li><a href="/vue/5Vue指令.html" class="active sidebar-link">5.指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#定义" class="sidebar-link">定义</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#原生对应的指令" class="sidebar-link">原生对应的指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-text" class="sidebar-link">v-text</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-html" class="sidebar-link">v-html</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-for" class="sidebar-link">v-for</a></li></ul></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#无原生对应的指令" class="sidebar-link">无原生对应的指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-bind" class="sidebar-link">v-bind</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-cloak" class="sidebar-link">v-cloak</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-once" class="sidebar-link">v-once</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-pre" class="sidebar-link">v-pre</a></li></ul></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#指令v-if、v-show和v-model" class="sidebar-link">指令v-if、v-show和v-model</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-if" class="sidebar-link">v-if</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-show" class="sidebar-link">v-show</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-model" class="sidebar-link">v-model</a></li><li class="sidebar-sub-header"><a href="/vue/5Vue指令.html#v-if-和-v-show-的区别" class="sidebar-link">v-if 和 v-show 的区别</a></li></ul></li></ul></li><li><a href="/vue/6Vue的事件处理.html" class="sidebar-link">6.Vue的事件处理</a></li><li><a href="/vue/X.面试题.html" class="sidebar-link">X.Vue相关面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_5-指令"><a href="#_5-指令" class="header-anchor">#</a> 5.指令</h1> <h2 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h2> <p>directive</p> <p>在Vue中vue-xxx的行内属性，统称为vue指令
+这些指令基于自定义属性制定，只不过在vue上有特殊含义
+当vue加载成功并进行处理的时候，会按照相关的规则解析和渲染视图，遇到对应的指令实现对应的功能</p> <h2 id="原生对应的指令"><a href="#原生对应的指令" class="header-anchor">#</a> 原生对应的指令</h2> <h3 id="v-text"><a href="#v-text" class="header-anchor">#</a> v-text</h3> <p>给非表单元素设置内容，相当于小胡子语法，v-text会把所有内容部分都当做文本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>v-text='变量'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>传统的胡子语法，在vue没有加载完成之前，会把先展示出来，v-text解决了这个问题</p> <h3 id="v-html"><a href="#v-html" class="header-anchor">#</a> v-html</h3> <p>给非表单元素设置内容，相当于原生的innerHTML，v-html支持对于标签的自动识别</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>v-html='变量'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>只在可信任的内容上使用该指令，用户可以操作的一般不添加这个指令</p> <h3 id="v-for"><a href="#v-for" class="header-anchor">#</a> v-for</h3> <p>循环展示标签</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>v-for='(值,index)in vue变量'
+    值代表数组中的当前项，index是对应的索引
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>值代表数组中的当前项
+index是对应的索引
+值和key是自己定义的变量，两个都需要加上();
+这两个变量只能用在当前使用v-for的标签及其内部
+可以用来循环数组、字符串、数字、对象</p> <h2 id="无原生对应的指令"><a href="#无原生对应的指令" class="header-anchor">#</a> 无原生对应的指令</h2> <h3 id="v-bind"><a href="#v-bind" class="header-anchor">#</a> v-bind</h3> <p>给元素的内置属性动态绑定数据，例如给img绑定动态的图片路径地址</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>v-bind:src=&quot;变量&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>简写形式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>:src=&quot;变量&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>v-bind指令专用于处理行内属性（src,class,style……）,通常简写为冒号</p> <h3 id="v-cloak"><a href="#v-cloak" class="header-anchor">#</a> v-cloak</h3> <p>为了解决小胡子的显示问题</p> <p>配合css使用：
+有v-cloak行内属性的元素，会有这个样式（属性选择器）
+[v-cloak]{display:none;}</p> <p>原理：
+vue还没完成渲染前，执行普通的HTML，css起作用
+vue渲染好后，vue自动把这个行内属性移除</p> <h3 id="v-once"><a href="#v-once" class="header-anchor">#</a> v-once</h3> <p>绑定的数据是一次性的，后面无论数据怎么改变，视图也都不会重新渲染</p> <h3 id="v-pre"><a href="#v-pre" class="header-anchor">#</a> v-pre</h3> <p>告诉vue 这个标签及其子标签 都不用vue渲染</p> <p>可用来提升vue的编码效率</p> <h2 id="指令v-if、v-show和v-model"><a href="#指令v-if、v-show和v-model" class="header-anchor">#</a> 指令v-if、v-show和v-model</h2> <h3 id="v-if"><a href="#v-if" class="header-anchor">#</a> v-if</h3> <p>控制当前元素是否在结构中加载
+它控制的是组件的加载和卸载操作=&gt;DOM的增加和删除</p> <p>v-if='判断体'</p> <p>对应还有v-else-if/v-else等指令
+使用时中间不能穿插其他标签</p> <p><strong>拓展</strong>：template</p> <p>多个元素条件一样，又不想在结构中添加父标签，可以使用template作为父标签，把他们包裹起来</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let vm=new Vue({
+    el:'#app'
+    template:'标签',
+    data:{……}
+}).$mount('#app');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>在这里template指定当前渲染的模板</p> <p>是否指定'el'元素
+否--&gt;当调用vm.$mount(el)函数时--&gt;是否指定“template”选项
+是--&gt;是否指定“template”选项
+是--&gt;将template编译到render函数中
+否--&gt;将el外部的HTML作为template编译</p> <h3 id="v-show"><a href="#v-show" class="header-anchor">#</a> v-show</h3> <p>基于display:none控制元素的隐藏显示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>v-show='变量'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>后面跟的是一个布尔类型（其他类型）true和false</p> <h3 id="v-model"><a href="#v-model" class="header-anchor">#</a> v-model</h3> <p>一般给表单元素设置的，实现表单元素和数据元素之间的相互绑定</p> <p>v-model='变量'</p> <p>效果
+视图&lt;=&gt;数据</p> <p>原理
+先把数据绑定给表单元素，一般把数据赋值给表单元素的value
+监听表单元素的内容改变
+内容改变后，会把对应的数据也改变
+对应的数据改变，视图中所有用到数据的地方都会重新渲染</p> <p>按照v-model进行分组，每一个框都有自己的value</p> <p>复选框</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>ary<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>ary<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>ary<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>ary:[1,3]：就是默认选中value为1和3的元素
+ary中存放的是 被选中的那些checkbox的值</p> <p>单选框</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>radio<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span>‘男’</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>sex<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>radio<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span>‘女’</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>sex<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>sex:'女'  就是默认选中的是value为女的元素
+sex存储就是选中的那个radio的value值</p> <p>下拉框</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>food<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>rice<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>米<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>苹果<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bana<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>香蕉<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>food存储的是里面option对应的value值
+food:'rice' 默认展示的是value为rice的值</p> <h3 id="v-if-和-v-show-的区别"><a href="#v-if-和-v-show-的区别" class="header-anchor">#</a> v-if 和 v-show 的区别</h3> <p>1.v-if是只加载条件成立的标签，v-show是都加载，同时还设置了display:none属性
+2.v-if切换开销大，v-show加载开销大</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/4vue基础语法.html" class="prev">
+        4.vue基础语法
+      </a></span> <span class="next"><a href="/vue/6Vue的事件处理.html">
+        6.Vue的事件处理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/37.edac8bc3.js" defer></script>
+  </body>
+</html>

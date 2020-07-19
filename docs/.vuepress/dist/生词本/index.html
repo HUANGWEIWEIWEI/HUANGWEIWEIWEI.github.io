@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端单词 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/70.b73cfa4e.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/24.f1868055.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/37.edac8bc3.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/57.9e95edc3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/60.c370307e.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/8.f8cdd7e6.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/" aria-current="page" class="active sidebar-link">前端单词</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#html中" class="sidebar-link">HTML中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#css中" class="sidebar-link">CSS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#js中" class="sidebar-link">JS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#浏览器中" class="sidebar-link">浏览器中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#对象方法" class="sidebar-link">对象方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#vue中" class="sidebar-link">Vue中</a></li></ul></li><li><a href="/生词本/字母排序基础单词.html" class="sidebar-link">基础单词</a></li><li><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/" aria-current="page" class="active sidebar-link">前端单词</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#html中" class="sidebar-link">HTML中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#css中" class="sidebar-link">CSS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#js中" class="sidebar-link">JS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#浏览器中" class="sidebar-link">浏览器中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#对象方法" class="sidebar-link">对象方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#vue中" class="sidebar-link">Vue中</a></li></ul></li><li><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/" aria-current="page" class="active sidebar-link">前端单词</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#html中" class="sidebar-link">HTML中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#css中" class="sidebar-link">CSS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#js中" class="sidebar-link">JS中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#浏览器中" class="sidebar-link">浏览器中</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#对象方法" class="sidebar-link">对象方法</a></li><li class="sidebar-sub-header"><a href="/%E7%94%9F%E8%AF%8D%E6%9C%AC/#vue中" class="sidebar-link">Vue中</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端单词"><a href="#前端单词" class="header-anchor">#</a> 前端单词</h1> <h2 id="html中"><a href="#html中" class="header-anchor">#</a> HTML中</h2> <p>头部/页眉：header<br>
+首页/索引：index<br>
+标志：logo<br>
+个人中心：member<br>
+显示：show<br>
+隐藏：hide<br>
+导航：nav<br>
+子导航：sub_nav<br>
+横幅广告：banner<br>
+主体：main<br>
+内容：content<br>
+包裹：wrapper<br>
+菜单：menu<br>
+子菜单：sub_menu<br>
+二级菜单：second_menu<br>
+列表：list<br>
+分块：section<br>
+文章：article<br>
+侧边栏/广告：aside<br>
+页脚/底部：footer<br>
+标题：title<br>
+副标题：sub_title<br>
+新闻：news<br>
+热点：hot<br>
+产品：product<br>
+公司：company<br>
+消息：message<br>
+广告：advertising<br>
+小图标：icon<br>
+图片：img<br>
+版权：copyright<br>
+联系我们：contact_us<br>
+友情连接：friend_link<br>
+地址：address<br>
+密码：password<br>
+无序列表：ul (Unordered List)<br>
+有序列表：ol (Ordered List)<br>
+列表项：li (List Item)<br>
+自定义列表：dl (Definition List)<br>
+表单：form<br>
+地址：action<br>
+方法：method<br>
+输入框：input<br>
+单选：radio<br>
+多选：checkbox<br>
+提交按钮：submit<br>
+选择：select<br>
+光标：cursor<br>
+标准光标：auto<br>
+标准箭头：default<br>
+手形光标：pointer<br>
+移动标：move<br>
+十字标：crosshair</p> <h2 id="css中"><a href="#css中" class="header-anchor">#</a> CSS中</h2> <p>padding 内边距<br>
+margin 外边距<br>
+border 边线<br>
+solid 直线<br>
+dashed 虚线<br>
+dotted 点线<br>
+overflow 溢出<br>
+hidden 隐藏<br>
+visibility 可见度<br>
+table 表格<br>
+thead 表头<br>
+tbody 表格内容<br>
+tr (table row) 行<br>
+td/th (table data, table headline)列<br>
+rowspan 合并行<br>
+colspan 合并列<br>
+collapse 合并<br>
+position 定位<br>
+relative 绝对定位<br>
+absolute 相对定位<br>
+fixed 固定定位<br>
+static 静态定位</p> <p>不透明度：opacity<br>
+占位符：placeholder<br>
+透明的：transparent<br>
+静态定位：static<br>
+过渡：transition<br>
+变形：transform<br>
+不管内容到了多少 到了长度就截断：word-break：break-all;<br>
+使盒子边框自适应：box-sizing：border-box;<br>
+允许长单词换行：word-wrap：break-word；<br>
+阻止文本域下拉：resize：none；</p> <h2 id="js中"><a href="#js中" class="header-anchor">#</a> JS中</h2> <p>字符串转整数：parseInt<br>
+字符串转浮点型：parseFloat<br>
+不明确的：undefined<br>
+没有定义：is not defined<br>
+全局作用域：window<br>
+正确的：true<br>
+错误的：false<br>
+长度：length<br>
+函数：function<br>
+警告框：alert<br>
+输入框：prompt<br>
+确认框：confirm<br>
+打断：break<br>
+继续：continue<br>
+返回：return<br>
+参数：arguments<br>
+原型：prototype<br>
+构造器：constructor<br>
+计时器：setInterval<br>
+解除计时器：clearIterval<br>
+指定时间后调用：setTimeOut<br>
+偏移：offset<br>
+滚动：scroll<br>
+父级：parent<br>
+事件对象：event<br>
+dom2级：addEventListener ie：attachEvent<br>
+键盘编码：keyCode</p> <p>阻止事件冒泡：event.stopPropagation?event.stopPropagation( ):event.cancelBubble = true;<br>
+阻止事件默认行为：event.preventDefault?event.preventDefault( ):event.returnValue = false;</p> <h2 id="浏览器中"><a href="#浏览器中" class="header-anchor">#</a> 浏览器中</h2> <p>浏览器的内核:<br>
+　　ie trident<br>
+　　谷歌 webkit 或 blink<br>
+　　火狐 Gecko<br>
+　　Opera presto<br>
+　　Safari webkit</p> <p>事件:<br>
+　　鼠标进入：mouseenter<br>
+　　鼠标离开：mouseleave<br>
+　　鼠标移动：mousemove<br>
+　　鼠标悬浮：mouseover<br>
+　　鼠标移除：mouseout<br>
+　　鼠标按下：mousedown<br>
+　　鼠标抬起：mouseup<br>
+　　表单聚焦：focus<br>
+　　失去焦点：blur<br>
+　　表单内容被修改：change<br>
+　　浏览器加载完成：load<br>
+　　用户输入：input<br>
+　　键盘按下：keydown<br>
+　　键盘抬起：keyup<br>
+　　右键出菜单事件：contextmenu</p> <p>获取属性节点:<br>
+　　判断节点类型：nodeType<br>
+　　获取元素身上所有属性构成的集合：obj.attributes<br>
+　　获取元素身上指定属性的属性值：obj.getAttribute('class')<br>
+　　修改元素身上指定属性的属性值：obj.setAttribute('class','class')<br>
+　　删除元素中的一个属性：obj.removeAttribute('class')</p> <p>获取元素节点:<br>
+　　获取元素的所有子节点包括文本：obj.childNodes<br>
+　　获取元素的所有子节点不包括文本：obj.children<br>
+　　获取元素里第一个子节点：obj.firstElementChild<br>
+　　获取元素里最后一个子节点：obj.lastElementChild<br>
+　　获取元素的父节点：obj.parentNode<br>
+　　获取上一个兄弟节点：obj.previousElementSibling<br>
+　　获取下一个兄弟节点：obj.nexElementSibling</p> <p>创建子节点:<br>
+　　创建：span = document.createElement('span')</p> <p>把创建的节点插入到元素的子节点里：obj.appendChild(span)</p> <p>把创建的节点插入到指定的元素前面：obj.inserBefore(span,div.children[0])</p> <p>删除元素中的指定节点：obj.removeChild(obj.children[0])</p> <p>给元素添加内容：obj.innerHTML=span；</p> <p>给元素添加文本内容：obj.innerText=‘哈哈哈’；</p> <h2 id="方法"><a href="#方法" class="header-anchor">#</a> 方法</h2> <p>全局方法:<br>
+　　将字符串转换成js代码：eval<br>
+　　判断一个元素是不是数字：isNaN<br>
+　　强制转换成数字：Number<br>
+　　强制转换成小数：parseFloat<br>
+　　强制转换成整数：ParseInt<br>
+　　强制转换成字符串：String</p> <p>字符串的方法：<br>
+　　返回指定位置的字符：charAt( )<br>
+　　连接两个字符：concat( )<br>
+　　查找字符在字符串中首次出现的位置：indexOf( )<br>
+　　同上 从后开始查找：lastIndexOf( )<br>
+　　截取字符串：slice( )<br>
+　　把字符串分割成字符串数组：split( )<br>
+　　截取字符串指定向后截取的个数：substr( )<br>
+　　截取字符串：substring( )<br>
+　　将所有大写转成小写：toLowerCase( )<br>
+　　将所有小写转成大写：toUpperCase( )<br>
+　　去除字符串两边的空格：trim( )</p> <p>数组方法：<br>
+　　在数组的结尾添加一个元素：push( )<br>
+　　在数组的开始添加一个元素：unshift( )<br>
+　　删除数组中最后一个元素：pop( )<br>
+　　删除数组中第一个元素：shift( )<br>
+　　截取数组中的一部分 并返回一个新数组：slice( )<br>
+　　在数组中添加或删除元素：splice( )<br>
+　　给数组中的元素排序：sort( )<br>
+　　反转数组中元素的顺序：reverse( )<br>
+　　将数组转换成字符串格式的数组：toString( )<br>
+　　合并多个数组 并返回新的数组：concat( )<br>
+　　检索数组中的元素 并返回他所在的位置：indexOf( )<br>
+　　将数组中的所有元素转换成字符串：join( )<br>
+　　检测数组中的元素是否都满足条件 返回布尔值：every( )<br>
+　　检测数组中的元素是否都满足条件 返回由满足条件的构成的新数组：filter( )<br>
+　　检测数组中的第一个元素是否满足条件：find( )<br>
+　　用于对数组进行遍历 并一个一个返回：foreach( )<br>
+　　对数组进行遍历 将每个元素传入到回调函数加工 返回加工后的新数组：map( )</p> <h2 id="对象方法"><a href="#对象方法" class="header-anchor">#</a> 对象方法</h2> <p>Math对象：<br>
+　　弧度的π：Math.Pi( )<br>
+　　平方根：Math.sqrt( )<br>
+　　数字的绝对值：Math.abs( )<br>
+　　上舍入：Math.ceil( )<br>
+　　下舍入：Math.floor( )<br>
+　　返回最大值：Math.max( )<br>
+　　反回最小值：Math.min( )<br>
+　　随机：Math.random( )<br>
+　　返回x四舍五入后的数值：Math.round()<br>
+　　返回正弦值：Math.sin( )<br>
+　　返回余弦值：Math.cos( )<br>
+　　返回正切值：Math.tan( )<br>
+　　反正弦：Math.asin( )<br>
+　　反余弦：Math.acos( )<br>
+　　返回x的y次幂：Math.atan( )</p> <p>Date对象：<br>
+　　get<br>
+　　　　返回事件对象中的某一天：getDate( )<br>
+　　　　返回周：getDay( )<br>
+　　　　返回年：getFullYear( )<br>
+　　　　返回月：getMonth( )<br>
+　　　　返回时：getHours( )<br>
+　　　　返回分：getMinutes( )<br>
+　　　　返回秒：getSeconds( )<br>
+　　　　获取1970.1.1至今的毫秒数：getTime( )<br>
+　　　　返回毫秒：getMilliseconds( )<br>
+　　　　返回指定时间到1970.1.1的毫秒数：parse( )</p> <p>set<br>
+　　　　设置事件对象中的某一天：setDate( )<br>
+　　　　设置年份：setFullYear( )<br>
+　　　　设置月份：setMonth( )<br>
+　　　　设置小时：setHours( )<br>
+　　　　设置分钟数：setMinutes( )</p> <h2 id="vue中"><a href="#vue中" class="header-anchor">#</a> Vue中</h2> <p>mustache 胡子
+computed 计算
+watch 监听
+filters 过滤器
+mounted 挂载，生成</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/70.b73cfa4e.js" defer></script>
+  </body>
+</html>

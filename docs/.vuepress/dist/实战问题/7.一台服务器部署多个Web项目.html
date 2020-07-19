@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.一台服务器部署多个Web项目 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.4b562478.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/57.9e95edc3.js" as="script"><link rel="prefetch" href="/assets/js/10.cbbfb012.js"><link rel="prefetch" href="/assets/js/11.824eee05.js"><link rel="prefetch" href="/assets/js/12.dbbfb1fc.js"><link rel="prefetch" href="/assets/js/13.430d27ac.js"><link rel="prefetch" href="/assets/js/14.95a70a86.js"><link rel="prefetch" href="/assets/js/15.de5a0531.js"><link rel="prefetch" href="/assets/js/16.0951b9f5.js"><link rel="prefetch" href="/assets/js/17.d2f51906.js"><link rel="prefetch" href="/assets/js/18.2d1aceda.js"><link rel="prefetch" href="/assets/js/19.a8145120.js"><link rel="prefetch" href="/assets/js/20.13da1a1f.js"><link rel="prefetch" href="/assets/js/21.e85f6a1f.js"><link rel="prefetch" href="/assets/js/22.43caec22.js"><link rel="prefetch" href="/assets/js/23.b7b26bd7.js"><link rel="prefetch" href="/assets/js/24.f1868055.js"><link rel="prefetch" href="/assets/js/25.b152a0fe.js"><link rel="prefetch" href="/assets/js/26.07955a87.js"><link rel="prefetch" href="/assets/js/27.f018d0cb.js"><link rel="prefetch" href="/assets/js/28.eb13d291.js"><link rel="prefetch" href="/assets/js/29.a605cb46.js"><link rel="prefetch" href="/assets/js/3.4004e10a.js"><link rel="prefetch" href="/assets/js/30.314769cf.js"><link rel="prefetch" href="/assets/js/31.dbbfa92a.js"><link rel="prefetch" href="/assets/js/32.82fce9c2.js"><link rel="prefetch" href="/assets/js/33.6135e313.js"><link rel="prefetch" href="/assets/js/34.2f3fa595.js"><link rel="prefetch" href="/assets/js/35.93f54892.js"><link rel="prefetch" href="/assets/js/36.5c9807b6.js"><link rel="prefetch" href="/assets/js/37.edac8bc3.js"><link rel="prefetch" href="/assets/js/38.788d796c.js"><link rel="prefetch" href="/assets/js/39.c1395f8c.js"><link rel="prefetch" href="/assets/js/4.6aef80ce.js"><link rel="prefetch" href="/assets/js/40.3192526b.js"><link rel="prefetch" href="/assets/js/41.6414f898.js"><link rel="prefetch" href="/assets/js/42.e2f7af72.js"><link rel="prefetch" href="/assets/js/43.45c214ef.js"><link rel="prefetch" href="/assets/js/44.9fa26a06.js"><link rel="prefetch" href="/assets/js/45.c1a43224.js"><link rel="prefetch" href="/assets/js/46.1c896860.js"><link rel="prefetch" href="/assets/js/47.dac47121.js"><link rel="prefetch" href="/assets/js/48.de1b8d44.js"><link rel="prefetch" href="/assets/js/49.4ec50a29.js"><link rel="prefetch" href="/assets/js/5.3a80538f.js"><link rel="prefetch" href="/assets/js/50.4b052d91.js"><link rel="prefetch" href="/assets/js/51.9ec48b59.js"><link rel="prefetch" href="/assets/js/52.58567d16.js"><link rel="prefetch" href="/assets/js/53.27976d5d.js"><link rel="prefetch" href="/assets/js/54.d18d6bd0.js"><link rel="prefetch" href="/assets/js/55.d2b73832.js"><link rel="prefetch" href="/assets/js/56.f11a41d3.js"><link rel="prefetch" href="/assets/js/58.f6f993e9.js"><link rel="prefetch" href="/assets/js/59.bbe7230e.js"><link rel="prefetch" href="/assets/js/6.92ed3a8a.js"><link rel="prefetch" href="/assets/js/60.c370307e.js"><link rel="prefetch" href="/assets/js/61.c7a90bf2.js"><link rel="prefetch" href="/assets/js/62.37fdff5c.js"><link rel="prefetch" href="/assets/js/63.c5c83106.js"><link rel="prefetch" href="/assets/js/64.8f07ecb7.js"><link rel="prefetch" href="/assets/js/65.dbf3ed54.js"><link rel="prefetch" href="/assets/js/66.0a0423e7.js"><link rel="prefetch" href="/assets/js/67.e1310acb.js"><link rel="prefetch" href="/assets/js/68.d24f27f5.js"><link rel="prefetch" href="/assets/js/69.abe4dc69.js"><link rel="prefetch" href="/assets/js/7.c9459e96.js"><link rel="prefetch" href="/assets/js/70.b73cfa4e.js"><link rel="prefetch" href="/assets/js/71.65193120.js"><link rel="prefetch" href="/assets/js/72.27bb6e0a.js"><link rel="prefetch" href="/assets/js/73.048d9db3.js"><link rel="prefetch" href="/assets/js/74.6f4c6678.js"><link rel="prefetch" href="/assets/js/75.5efbf2cb.js"><link rel="prefetch" href="/assets/js/76.74c48ea3.js"><link rel="prefetch" href="/assets/js/8.f8cdd7e6.js"><link rel="prefetch" href="/assets/js/9.dc48f7c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MORE" class="dropdown-title"><span class="title">MORE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/实战问题/" class="nav-link">
+  实战问题
+</a></li><li class="dropdown-item"><!----> <a href="/项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/HUANGWEIWEIWEI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/%E5%AE%9E%E6%88%98%E9%97%AE%E9%A2%98/" aria-current="page" class="sidebar-link">实战中遇到的问题归纳</a></li><li><a href="/实战问题/1.mac显示项目树：tree命令.html" class="sidebar-link">1.mac显示项目树：tree命令</a></li><li><a href="/实战问题/2.语法糖.html" class="sidebar-link">2.语法糖</a></li><li><a href="/实战问题/3.软件发行版本分类.html" class="sidebar-link">3.软件发行版本分类</a></li><li><a href="/实战问题/4.strapi.html" class="sidebar-link">4.strapi</a></li><li><a href="/实战问题/5.系统用户权限不足问题.html" class="sidebar-link">5.系统用户权限问题</a></li><li><a href="/实战问题/6.RESTful.html" class="sidebar-link">6.RESTful</a></li><li><a href="/实战问题/7.一台服务器部署多个Web项目.html" class="active sidebar-link">7.一台服务器部署多个Web项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-基础：一台服务器部署单个项目" class="sidebar-link">7.1 基础：一台服务器部署单个项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-1-远程登录服务器-安装nginx" class="sidebar-link">7.1.1 远程登录服务器&amp;安装NGINX</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-2-安装数据库mongdb" class="sidebar-link">7.1.2 安装数据库mongdb</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-3-安装git配置ssh-key，生成公钥" class="sidebar-link">7.1.3 安装git配置ssh-key，生成公钥</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-4安装nodejs配置淘宝镜像" class="sidebar-link">7.1.4安装nodejs配置淘宝镜像</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-5-本地代码-gitee，gitee-服务器，pm2" class="sidebar-link">7.1.5 本地代码--&gt;gitee，gitee--&gt;服务器，pm2</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-6-配置nginx的反向代理" class="sidebar-link">7.1.6 配置nginx的反向代理</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-7-mogodb数据库数据迁移" class="sidebar-link">### 7.1.7 mogodb数据库数据迁移</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-1-8-使用免费ssl证书启用https安全连接" class="sidebar-link">7.1.8  使用免费ssl证书启用https安全连接</a></li></ul></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-2-进阶：一台服务器部署多个项目" class="sidebar-link">7.2 进阶：一台服务器部署多个项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-2-1-软件开发的种类" class="sidebar-link">7.2.1 软件开发的种类</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-2-2-第一步：购买腾讯云-阿里云服务器" class="sidebar-link">7.2.2 第一步：购买腾讯云 / 阿里云服务器</a></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-2-2-第二步：重置云服务器密码，使用-ssh-工具远程连接服务器" class="sidebar-link">7.2.2 第二步：重置云服务器密码，使用 SSH 工具远程连接服务器</a></li></ul></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-3-经验：nginx部署项目" class="sidebar-link">7.3 经验：nginx部署项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#_7-3-1-可直接将nginx下的html文件夹下的内容替换成项目内容。" class="sidebar-link">7.3.1 可直接将nginx下的html文件夹下的内容替换成项目内容。</a></li></ul></li><li class="sidebar-sub-header"><a href="/实战问题/7.一台服务器部署多个Web项目.html#参考文章" class="sidebar-link">参考文章</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_7-一台服务器部署多个web项目"><a href="#_7-一台服务器部署多个web项目" class="header-anchor">#</a> 7.一台服务器部署多个Web项目</h1> <h2 id="_7-1-基础：一台服务器部署单个项目"><a href="#_7-1-基础：一台服务器部署单个项目" class="header-anchor">#</a> 7.1 基础：一台服务器部署单个项目</h2> <p>在项目完成了从开发环境到生产环境的代码编译后，就开始了项目在服务器上的部署</p> <p>下面是一次ubuntu+nginx+mongodb+pm2+gitee的部署经验：</p> <h3 id="_7-1-1-远程登录服务器-安装nginx"><a href="#_7-1-1-远程登录服务器-安装nginx" class="header-anchor">#</a> 7.1.1 远程登录服务器&amp;安装NGINX</h3> <p>选用了ubuntu操作系统，因为指令和Mac差不多</p> <p>终端ssh ubuntu@49.232.47.19登录服务器</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#apt show nginx</span>
+//在服务区上找有没有,apt/yum/homebrew----ubuntu/centOs/mac ：包管理器对应系统
+
+<span class="token comment">#apt update</span>
+//没有就更新
+
+<span class="token comment">#apt show nginx</span>
+//再看看有没有
+
+<span class="token comment">#apt install nginx -y</span>
+//安装nginx,-y表示直接确认
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>完成此步后，域名就可以打开了</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200718145055.png" alt=""></p> <h3 id="_7-1-2-安装数据库mongdb"><a href="#_7-1-2-安装数据库mongdb" class="header-anchor">#</a> 7.1.2 安装数据库mongdb</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#apt show mongodb</span>
+
+<span class="token comment">#apt show mongodb-server</span>
+//装mongodb的服务端
+
+<span class="token comment">#apt install -y mongodb-server</span>
+
+<span class="token comment">#mongo</span>
+//直接执行mongo，此时已经进入数据库，可以执行数据库命令
+
+<span class="token operator">&gt;</span>show dbs
+<span class="token operator">&gt;</span>exit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_7-1-3-安装git配置ssh-key，生成公钥"><a href="#_7-1-3-安装git配置ssh-key，生成公钥" class="header-anchor">#</a> 7.1.3 安装git配置ssh-key，生成公钥</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#apt install -y git</span>
+//安装git
+
+<span class="token comment">#git</span>
+//输入git就有东西了
+
+<span class="token comment">#ssh-keygen</span>
+//配置ssh-key，生成公钥，一路回车
+
+<span class="token comment">#cat /root/.ssh/id_rsa.pub</span>
+//查看公钥内容,粘贴到git上
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_7-1-4安装nodejs配置淘宝镜像"><a href="#_7-1-4安装nodejs配置淘宝镜像" class="header-anchor">#</a> 7.1.4安装nodejs配置淘宝镜像</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#apt install -y nodejs</span>
+
+<span class="token comment">#node -v</span>
+
+<span class="token comment">#npm -v</span>
+
+<span class="token comment">#npm config set registry https://registry.npm.taobao.org</span>
+//更换npm源为淘宝镜像
+
+<span class="token comment">#npm config get registry</span>
+//查看npm源
+
+<span class="token comment">#npm i -g nrm</span>
+//nrm包可以快速切换npm源
+
+<span class="token comment">#nrm current</span>
+
+<span class="token comment">#nrm use npm</span>
+
+<span class="token comment">#nrm use taobao</span>
+
+<span class="token comment">#npm i -g n</span>
+//n包可以升级node本身
+
+<span class="token comment">#n latest</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>重新连接再看node版本</p> <h3 id="_7-1-5-本地代码-gitee，gitee-服务器，pm2"><a href="#_7-1-5-本地代码-gitee，gitee-服务器，pm2" class="header-anchor">#</a> 7.1.5 本地代码--&gt;gitee，gitee--&gt;服务器，pm2</h3> <h4 id="本地代码-gitee"><a href="#本地代码-gitee" class="header-anchor">#</a> 本地代码--&gt;gitee</h4> <p>本地：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#ssh-keygen</span>
+
+<span class="token comment">#cat /root/.ssh/id_rsa.pub</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>把本地生成的公钥放到码云的公钥里</p> <p>码云用户头像&gt;设置&gt;安全设置&gt;ssh公钥</p> <p>本地：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#git config --global user.name &quot;小豆子&quot;</span>
+<span class="token comment">#git config --global user.email &quot;7360121+hello_hww@user.noreply.gitee.com&quot;</span>
+//Git 全局设置
+
+<span class="token comment">#git init</span>
+//初始化当前文件夹为git项目
+
+<span class="token comment">#git add .   </span>
+//把当前文件夹加到git里面去
+
+<span class="token comment">#git commit -am &quot;一段描述&quot;   </span>
+//把这个修改提交到本地
+
+<span class="token comment">#git remote add origin git@gitee.com:hello_hww/test.git</span>
+//把代码和线上的ssh地址相关联，origin代表源头，可以改名字
+
+<span class="token comment">#git push -u origin master</span>
+//本地提交到远程，push提交，-u首次提交需要用于关联
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>然后刷新码云上的页面就有项目了</p> <h4 id="gitee-服务器"><a href="#gitee-服务器" class="header-anchor">#</a> gitee--&gt;服务器</h4> <p>把服务器的key拿过来，放在码云</p> <p>仓库标签栏&gt;管理&gt;部署公钥管理</p> <p>服务器：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#cd /var/www/html</span>
+//www是装完nginx自己会创建的一个文件夹
+
+<span class="token comment">#cd /data</span>
+//项目放这里
+
+<span class="token comment">#git clone git@gitee.com:hello_hww/test.git</span>
+//拉gitee上的代码过来
+
+<span class="token comment">#ls</span>
+
+<span class="token comment">#cd test</span>
+
+<span class="token comment">#npm i</span>
+//进入项目中安装依赖
+
+<span class="token comment">#npm i -g pm2</span>
+//安装pm2
+
+<span class="token comment">#pm2 start index.js</span>
+//用pm2启动服务
+
+<span class="token comment">#pm2 list</span>
+//查看进程
+
+<span class="token comment">#pm2 logs index</span>
+//查看他的日志
+
+<span class="token comment">#^c</span>
+//退出并不会结束进程
+
+<span class="token comment">#pm2 stop index</span>
+//要这样才能结束进程
+
+<span class="token comment">#curl http://localhost:3000</span>
+//表示请求一个接口/地址，可以查看我们部署的项目
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>现在只能自己访问<br>
+下面就把localhost3000绑定到nginx上，可以实现外网访问</p> <h3 id="_7-1-6-配置nginx的反向代理"><a href="#_7-1-6-配置nginx的反向代理" class="header-anchor">#</a> 7.1.6 配置nginx的反向代理</h3> <p>在vs code安装remote ssh拓展</p> <p>连接服务器</p> <p>进入/etc，他是有关配置的文件夹，包括nginx</p> <p>/etc/nginx/</p> <p>Sites_enable 所有已启用的站点，每个站点都是一个文件</p> <p>去在线生成nginx配置,粘贴过去
+https://www.digitalocean.com/community/tools/nginx</p> <p>重载配置文件</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#service nginx reload</span>
+
+<span class="token comment">#pm2 list</span>
+
+<span class="token comment">#pm2 start index.js</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_7-1-7-mogodb数据库数据迁移"><a href="#_7-1-7-mogodb数据库数据迁移" class="header-anchor">#</a> ### 7.1.7 mogodb数据库数据迁移</h3> <p>本地：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#mongodump -d 数据库名</span>
+//执行后在当前文件夹生成dump文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>把dump文件夹粘贴到remote连接的自己的服务器上</p> <p>服务器：</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment">#mongorestore</span>
+//执行恢复
+
+<span class="token comment">#cd ...</span>
+<span class="token comment">#pm2 start index.js</span>
+//恢复好以后，再pm2启动服务就可以了
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_7-1-8-使用免费ssl证书启用https安全连接"><a href="#_7-1-8-使用免费ssl证书启用https安全连接" class="header-anchor">#</a> 7.1.8  使用免费ssl证书启用https安全连接</h3> <p>https://certbot.eff.org</p> <h2 id="_7-2-进阶：一台服务器部署多个项目"><a href="#_7-2-进阶：一台服务器部署多个项目" class="header-anchor">#</a> 7.2 进阶：一台服务器部署多个项目</h2> <h3 id="_7-2-1-软件开发的种类"><a href="#_7-2-1-软件开发的种类" class="header-anchor">#</a> 7.2.1 软件开发的种类</h3> <p>1.算法类软件</p> <p>2.工程类软件</p> <div class="language- extra-class"><pre><code>Android APP
+IOS APP
+Flutter APP
+React Native APP
+MiniProgram APP
+VUE SPA WEB
+Angular SPA WEB
+React SPA WEB
+Bootstrap + JQuery WEB
+Python + Flask Server
+JavaScript + Node.js Server
+PHP + Slim Server
+Java + Spring MVC Server
+Electron Desktop
+C# Desktop
+Qt Desktop
+Unity
+Others...
+</code></pre></div><p>也就是说，工程类软件主要是如下四大类的：</p> <p>APP - 手机端应用开发<br>
+WEB - 浏览器端应用开发<br>
+Server - 服务器端应用开发<br>
+Desktop - 电脑桌面端应用开发</p> <h3 id="_7-2-2-第一步：购买腾讯云-阿里云服务器"><a href="#_7-2-2-第一步：购买腾讯云-阿里云服务器" class="header-anchor">#</a> 7.2.2 第一步：购买腾讯云 / 阿里云服务器</h3> <p>获得一个 固定公网 IP 地址</p> <p>操作系统建议使用 CentOS</p> <h3 id="_7-2-2-第二步：重置云服务器密码，使用-ssh-工具远程连接服务器"><a href="#_7-2-2-第二步：重置云服务器密码，使用-ssh-工具远程连接服务器" class="header-anchor">#</a> 7.2.2 第二步：重置云服务器密码，使用 SSH 工具远程连接服务器</h3> <h2 id="_7-3-经验：nginx部署项目"><a href="#_7-3-经验：nginx部署项目" class="header-anchor">#</a> 7.3 经验：nginx部署项目</h2> <h3 id="_7-3-1-可直接将nginx下的html文件夹下的内容替换成项目内容。"><a href="#_7-3-1-可直接将nginx下的html文件夹下的内容替换成项目内容。" class="header-anchor">#</a> 7.3.1 可直接将nginx下的html文件夹下的内容替换成项目内容。</h3> <p>/var/www/html下的index.nginx-debian.html删掉。</p> <p>把build好的静态文件上传过去。</p> <h2 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章</h2> <p>https://zhuanlan.zhihu.com/p/69555541</p> <p>https://www.jianshu.com/p/58b890a1c8fb</p> <p>pm2常用命令
+https://www.jianshu.com/p/e709b71f12da</p> <p>SSH远程登录出现 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! 解决办法
+https://blog.csdn.net/qq_36441027/article/details/81708726</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/19/2020, 5:38:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/实战问题/6.RESTful.html" class="prev">
+        6.RESTful
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b562478.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/57.9e95edc3.js" defer></script>
+  </body>
+</html>
