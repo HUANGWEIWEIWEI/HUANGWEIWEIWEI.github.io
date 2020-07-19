@@ -1,0 +1,10 @@
+node_modules
+dist
+.idea
+git init
+
+git add .
+
+git commit -m "my first push vuepess app"
+
+git push
