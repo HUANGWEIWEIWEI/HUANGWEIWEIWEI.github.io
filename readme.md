@@ -25,8 +25,6 @@ npm run d
 npm run server 
 
 
-### main page
-![avatar](./shotPic/main.png)
 
 ### feature
 - [x] 可以统计阅读量
