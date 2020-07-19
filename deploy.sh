@@ -15,8 +15,8 @@ cd docs/.vuepress/dist
 #git init
 #git config user.name "HUANGWEIWEIWEI"
 #git config user.email "1535445275@qq.com"
-git add -A
-git commit -m '8th commit'
+sudo git add .
+sudo git commit -m '8th commit'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master:gh-pages
