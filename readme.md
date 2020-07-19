@@ -1,7 +1,7 @@
-# vuepress-app
+# 项目
 >Vuepress搭建的的静态网页，伟伟黄的前端笔记。
 
-### Build Setup
+### 构建
 
 
 # clone item
