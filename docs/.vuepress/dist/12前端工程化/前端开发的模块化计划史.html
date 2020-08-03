@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端开发的模块化进化史 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1fd5df21.css" as="style"><link rel="preload" href="/assets/js/app.2da3f8f4.js" as="script"><link rel="preload" href="/assets/js/2.28149a32.js" as="script"><link rel="preload" href="/assets/js/67.b1cf3fea.js" as="script"><link rel="prefetch" href="/assets/js/10.623907aa.js"><link rel="prefetch" href="/assets/js/100.2f157ac0.js"><link rel="prefetch" href="/assets/js/101.6a3aa99c.js"><link rel="prefetch" href="/assets/js/102.72facc91.js"><link rel="prefetch" href="/assets/js/103.8b525b8f.js"><link rel="prefetch" href="/assets/js/104.b4a43051.js"><link rel="prefetch" href="/assets/js/105.68592ec5.js"><link rel="prefetch" href="/assets/js/106.a89e5ced.js"><link rel="prefetch" href="/assets/js/107.d434cba8.js"><link rel="prefetch" href="/assets/js/11.5255075a.js"><link rel="prefetch" href="/assets/js/12.fd9c55e0.js"><link rel="prefetch" href="/assets/js/13.344e7d68.js"><link rel="prefetch" href="/assets/js/14.4b67049b.js"><link rel="prefetch" href="/assets/js/15.2b5aee9b.js"><link rel="prefetch" href="/assets/js/16.ace5cd1a.js"><link rel="prefetch" href="/assets/js/17.0201e934.js"><link rel="prefetch" href="/assets/js/18.b08cea04.js"><link rel="prefetch" href="/assets/js/19.68b27ecd.js"><link rel="prefetch" href="/assets/js/20.2814c7eb.js"><link rel="prefetch" href="/assets/js/21.d193aa64.js"><link rel="prefetch" href="/assets/js/22.12bd12fb.js"><link rel="prefetch" href="/assets/js/23.dc18f4d5.js"><link rel="prefetch" href="/assets/js/24.4c6b1f93.js"><link rel="prefetch" href="/assets/js/25.d5318618.js"><link rel="prefetch" href="/assets/js/26.9adb0309.js"><link rel="prefetch" href="/assets/js/27.64e4f50e.js"><link rel="prefetch" href="/assets/js/28.5de553f4.js"><link rel="prefetch" href="/assets/js/29.b2588870.js"><link rel="prefetch" href="/assets/js/3.4c54ebfd.js"><link rel="prefetch" href="/assets/js/30.453747b7.js"><link rel="prefetch" href="/assets/js/31.3bb92c7d.js"><link rel="prefetch" href="/assets/js/32.9c17b35c.js"><link rel="prefetch" href="/assets/js/33.051504f3.js"><link rel="prefetch" href="/assets/js/34.b6247abb.js"><link rel="prefetch" href="/assets/js/35.ed602d03.js"><link rel="prefetch" href="/assets/js/36.3c7f663a.js"><link rel="prefetch" href="/assets/js/37.38481327.js"><link rel="prefetch" href="/assets/js/38.86450c93.js"><link rel="prefetch" href="/assets/js/39.63c54087.js"><link rel="prefetch" href="/assets/js/4.5dc42fc5.js"><link rel="prefetch" href="/assets/js/40.2274ea50.js"><link rel="prefetch" href="/assets/js/41.f6cc624c.js"><link rel="prefetch" href="/assets/js/42.eda94376.js"><link rel="prefetch" href="/assets/js/43.07c0ffa3.js"><link rel="prefetch" href="/assets/js/44.c4ac1b97.js"><link rel="prefetch" href="/assets/js/45.dfcabe37.js"><link rel="prefetch" href="/assets/js/46.44137eff.js"><link rel="prefetch" href="/assets/js/47.c56a79bf.js"><link rel="prefetch" href="/assets/js/48.7a3b2fc4.js"><link rel="prefetch" href="/assets/js/49.32e2c489.js"><link rel="prefetch" href="/assets/js/5.ae7a5a92.js"><link rel="prefetch" href="/assets/js/50.7fdfa260.js"><link rel="prefetch" href="/assets/js/51.eaa6406f.js"><link rel="prefetch" href="/assets/js/52.cfacde0f.js"><link rel="prefetch" href="/assets/js/53.9fbf7861.js"><link rel="prefetch" href="/assets/js/54.a467fe5f.js"><link rel="prefetch" href="/assets/js/55.69d2a4d9.js"><link rel="prefetch" href="/assets/js/56.600148ed.js"><link rel="prefetch" href="/assets/js/57.14ac3ccc.js"><link rel="prefetch" href="/assets/js/58.65d3d215.js"><link rel="prefetch" href="/assets/js/59.28a4c5fe.js"><link rel="prefetch" href="/assets/js/6.4ec5130e.js"><link rel="prefetch" href="/assets/js/60.7b795fb4.js"><link rel="prefetch" href="/assets/js/61.b8fe18db.js"><link rel="prefetch" href="/assets/js/62.45a160be.js"><link rel="prefetch" href="/assets/js/63.cce12644.js"><link rel="prefetch" href="/assets/js/64.0fc5964e.js"><link rel="prefetch" href="/assets/js/65.d72a3717.js"><link rel="prefetch" href="/assets/js/66.398260ac.js"><link rel="prefetch" href="/assets/js/68.93b00111.js"><link rel="prefetch" href="/assets/js/69.7ea19790.js"><link rel="prefetch" href="/assets/js/7.745ab17e.js"><link rel="prefetch" href="/assets/js/70.a77e5c2a.js"><link rel="prefetch" href="/assets/js/71.38143895.js"><link rel="prefetch" href="/assets/js/72.898246fe.js"><link rel="prefetch" href="/assets/js/73.1688d2f4.js"><link rel="prefetch" href="/assets/js/74.f51a2f07.js"><link rel="prefetch" href="/assets/js/75.ca95c5bd.js"><link rel="prefetch" href="/assets/js/76.d6737b15.js"><link rel="prefetch" href="/assets/js/77.a14d651b.js"><link rel="prefetch" href="/assets/js/78.a2e30673.js"><link rel="prefetch" href="/assets/js/79.d183ff9a.js"><link rel="prefetch" href="/assets/js/8.4d463064.js"><link rel="prefetch" href="/assets/js/80.bb5ae58d.js"><link rel="prefetch" href="/assets/js/81.8c052613.js"><link rel="prefetch" href="/assets/js/82.1861a13b.js"><link rel="prefetch" href="/assets/js/83.5b58ad0c.js"><link rel="prefetch" href="/assets/js/84.176d1006.js"><link rel="prefetch" href="/assets/js/85.b07dc6cd.js"><link rel="prefetch" href="/assets/js/86.fa3a217c.js"><link rel="prefetch" href="/assets/js/87.6c2fd109.js"><link rel="prefetch" href="/assets/js/88.a6e29307.js"><link rel="prefetch" href="/assets/js/89.781ff2e9.js"><link rel="prefetch" href="/assets/js/9.c4ab9703.js"><link rel="prefetch" href="/assets/js/90.fa4d0c2b.js"><link rel="prefetch" href="/assets/js/91.d22b1704.js"><link rel="prefetch" href="/assets/js/92.0d628c60.js"><link rel="prefetch" href="/assets/js/93.53f833b8.js"><link rel="prefetch" href="/assets/js/94.b7345182.js"><link rel="prefetch" href="/assets/js/95.a0fbbd37.js"><link rel="prefetch" href="/assets/js/96.2a0810ba.js"><link rel="prefetch" href="/assets/js/97.c3ec433f.js"><link rel="prefetch" href="/assets/js/98.9b8d3ec3.js"><link rel="prefetch" href="/assets/js/99.a2acc862.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fd5df21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/" class="nav-link">
+  实战问题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11UNIAPP/" class="nav-link">
+  多端开发UNIAPP
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/" class="nav-link">
+  实战问题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/12%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" aria-current="page" class="sidebar-link">前端工程化</a></li><li><a href="/12前端工程化/WebPack.html" class="sidebar-link">Webpack快速上手</a></li><li><a href="/12前端工程化/WebPack原理与实践.html" class="sidebar-link">WebPack原理与实践</a></li><li><a href="/12前端工程化/前端开发的模块化计划史.html" class="active sidebar-link">前端开发的模块化进化史</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#定义" class="sidebar-link">定义</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#作用" class="sidebar-link">作用</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#单例设计模式" class="sidebar-link">单例设计模式</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#amd规范" class="sidebar-link">AMD规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#使用" class="sidebar-link">使用</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#特点" class="sidebar-link">特点</a></li></ul></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#cmd规范" class="sidebar-link">CMD规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#使用-2" class="sidebar-link">使用</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#特点-2" class="sidebar-link">特点</a></li></ul></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#commonjs规范-module-exports" class="sidebar-link">CommonJS规范---module.exports</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#使用-3" class="sidebar-link">使用</a></li></ul></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#es6-module规范" class="sidebar-link">ES6 Module规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#特点-3" class="sidebar-link">特点</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#导出" class="sidebar-link">导出</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#导入" class="sidebar-link">导入</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#例" class="sidebar-link">例</a></li></ul></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#对比分析小结" class="sidebar-link">对比分析小结</a></li><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#webpack时代" class="sidebar-link">webpack时代</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/12前端工程化/前端开发的模块化计划史.html#webpack的优点：" class="sidebar-link">webpack的优点：</a></li></ul></li></ul></li><li><a href="/12前端工程化/前端模块化、组件化、前端工程化的区别.html" class="sidebar-link">前端模块化、组件化、前端工程化的区别</a></li><li><a href="/12前端工程化/面试题.html" class="sidebar-link">/12前端工程化/面试题.html</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端开发的模块化进化史"><a href="#前端开发的模块化进化史" class="header-anchor">#</a> 前端开发的模块化进化史</h1> <h2 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h2> <p>JavaScript本身是弱化命名空间概念的，只有全局作用域和函数的私有作用域（ES6中新增块作用域），而模块化开发，强化了命名空间的概念</p> <h2 id="作用"><a href="#作用" class="header-anchor">#</a> 作用</h2> <p>代码分离、解耦、复用
+团队开发
+避免命名重复
+相互引用，按需加载</p> <h2 id="单例设计模式"><a href="#单例设计模式" class="header-anchor">#</a> 单例设计模式</h2> <p>Singleton Pattern 最早的模块化管理</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> xxxModule<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//...</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+        <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//...</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xxxModule<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="amd规范"><a href="#amd规范" class="header-anchor">#</a> AMD规范</h2> <p>Asynchronous Module Definition 异步模块定义规范</p> <p>--代表：require
+--官网：  https://requirejs.org</p> <p>AMD规范是非同步加载模块，允许指定回调函数。</p> <p>AMD标准中，定义了下面两个API：</p> <p>require([module], callback)
+define(id, [depends], callback)
+　　即通过define来定义一个模块，然后使用require来加载一个模块。 并且，require还支持CommonJS的模块导出方式。</p> <blockquote><p>AMD与RequireJS的关系
+AMD是RequireJS在推广过程中对模块定义的规范化产出，它是一个概念，RequireJS是对这个概念的实现，就好比JavaScript语言是对ECMAScript规范的实现。AMD是一个组织，RequireJS是在这个组织下自定义的一套脚本语言</p></blockquote> <blockquote><p>RequireJS：是一个AMD框架，可以异步加载JS文件，按照模块加载方法，通过define()函数定义，第一个参数是一个数组，里面定义一些需要依赖的包，第二个参数是一个回调函数，通过变量来引用模块里面的方法，最后通过return来输出。
+是一个依赖前置、异步定义的AMD框架（在参数里面引入js文件），在定义的同时如果需要用到别的模块，在最前面定义好即在参数数组里面进行引入，在回调里面加载</p></blockquote> <h3 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h3> <p>开发目录里的main.js全局配置</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200622203042.png" alt=""></p> <p>main.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>require<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    baseUrl<span class="token operator">:</span><span class="token string">'js/lib'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'moduleB'</span><span class="token punctuation">,</span><span class="token string">'moduleA'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">moduleB<span class="token punctuation">,</span>moduleA</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>moduleB<span class="token punctuation">.</span><span class="token function">average</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>moduleA.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+        <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>arg</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> arg<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">total<span class="token punctuation">,</span>item</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> total<span class="token operator">+</span>item<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>moduleB.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'moduleA'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token function">fuction</span><span class="token punctuation">(</span><span class="token parameter">moduleA</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+        <span class="token function">average</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            args<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>a<span class="token operator">-</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            args<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            args<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> moduleA<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span><span class="token operator">/</span>arg<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="特点"><a href="#特点" class="header-anchor">#</a> 特点</h3> <p>依赖前置。在定义一个新的模块之前，要把依赖的模块全部设定好</p> <h2 id="cmd规范"><a href="#cmd规范" class="header-anchor">#</a> CMD规范</h2> <p>Common Module Define 通用模块定义规范</p> <p>--代表：sea.js
+--官网：  https://seajs.org</p> <blockquote><p>SeaJS是淘宝团队提供的一个模块开发的js框架.</p></blockquote> <p>CMD是同步模块定义。</p> <p>//所有模块都通过define来定义
+define(function(require, exports, module) {<br>
+// 通过require引入依赖
+var $ = require('jquery');
+var Spinning = require('./spinning');
+exports.doSomething = ...
+module.exports = ...
+})</p> <p>二者的区别是前者是对于依赖的模块提前执行，而后者是延迟执行。 前者推崇依赖前置，而后者推崇依赖就近，即只在需要用到某个模块的时候再require。</p> <h3 id="使用-2"><a href="#使用-2" class="header-anchor">#</a> 使用</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span>exports<span class="token punctuation">,</span>module</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//通过require引入依赖</span>
+    <span class="token keyword">let</span> $<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'jquery'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> spinning<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">/</span>spinning<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//通过module.exports提供接口</span>
+    module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">{</span>
+        <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="特点-2"><a href="#特点-2" class="header-anchor">#</a> 特点</h3> <p>CMD比AMD更灵活</p> <p>CMD参考CommonJS规范，可以运行在客户端</p> <h2 id="commonjs规范-module-exports"><a href="#commonjs规范-module-exports" class="header-anchor">#</a> CommonJS规范---module.exports</h2> <p>前端浏览器不支持，一般用于服务器开发，例如NodeJS</p> <p>CommonJS的核心思想就是通过 require 方法来同步加载所要依赖的其他模块，然后通过 exports 或者 module.exports 来导出需要暴露的接口。</p> <p>在CommenJS里面，require一个模块，相当于执行了该模块并得到模块输出的module.exports对象的一份拷贝，重复引入不会重复执行</p> <h3 id="使用-3"><a href="#使用-3" class="header-anchor">#</a> 使用</h3> <p>导入 require
+导出 module.exports</p> <p>A.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span>y</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">{</span>
+    sun
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>B.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> x<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> <span class="token constant">A</span><span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//第一次引用，module.exports导出的结果拷贝一份给变量</span>
+<span class="token constant">A</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">A</span><span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//第二次引用，内部默认看看之前有无导入过，如有则不会再把A代码重新执行，而是直接获取上一次拷贝的信息</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="es6-module规范"><a href="#es6-module规范" class="header-anchor">#</a> ES6 Module规范</h2> <p>ESM：JS官方标准模块定义方式</p> <p>ES6Module是JS新增的模块导入导出规范（不同于AMD和CMD[CommenJS],ES6Module是静态编译的）</p> <blockquote><p>动态编译：代码执行到具体位置的时候才会进行模块的导入导出
+静态编译：先按照依赖的关系把模块导入导出编译，再执行代码</p></blockquote> <p>在ES6中，我们可以使用 import 关键字引入模块，通过 exprot 关键字导出模块，功能较之于前几个方案更为强大，也是我们所推崇的，但是由于ES6目前无法在浏览器中执行，所以，我们只能通过babel将不被支持的import编译为当前受到广泛支持的 require。</p> <h3 id="特点-3"><a href="#特点-3" class="header-anchor">#</a> 特点</h3> <p>模块的导入都要放在代码的最前面--浏览器不能直接识别，需要先进行编译才可以（webpack可以完成这个编译）</p> <p>如果没有编译就执行，会报语法错误</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Uncaught SyntaxError:Cannot use import statement outside a module
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="导出"><a href="#导出" class="header-anchor">#</a> 导出</h3> <p>export</p> <p>export default
+<code>导出一个</code>    对应导入一个  import c from './C.js';</p> <h3 id="导入"><a href="#导入" class="header-anchor">#</a> 导入</h3> <p>导入多个 import {sum,n} from './A.js';</p> <p>导入全部 import * as A from './A'
+``此时使用A.sum()、A.n</p> <h3 id="例"><a href="#例" class="header-anchor">#</a> 例</h3> <p>A.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span>y</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x<span class="token operator">+</span>y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>B.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span><span class="token punctuation">{</span>
+    sum<span class="token punctuation">,</span>n
+<span class="token punctuation">}</span><span class="token keyword">from</span> <span class="token string">'./A.js'</span><span class="token punctuation">;</span>
+<span class="token comment">// import * as A from './A';</span>
+<span class="token comment">// A.sum()</span>
+<span class="token comment">// A.n</span>
+<span class="token keyword">import</span> c <span class="token keyword">from</span> <span class="token string">'./C.js'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="对比分析小结"><a href="#对比分析小结" class="header-anchor">#</a> 对比分析小结</h2> <p>commonjs是用在服务器端的，同步的，如nodejs
+amd, cmd是用在浏览器端的，异步的，如requirejs和seajs</p> <p>以后开发尽量：
+浏览器端用ES6的export/import
+服务器端用CommenJS的module.exports/require</p> <h2 id="webpack时代"><a href="#webpack时代" class="header-anchor">#</a> webpack时代</h2> <h3 id="webpack的优点："><a href="#webpack的优点：" class="header-anchor">#</a> webpack的优点：</h3> <p>1.require.js的所有功能它都有</p> <p>2.编绎过程更快，因为require.js会去处理不需要的文件</p> <p>3.还有一个额外的好处就是你不需要再做一个封装的函数，require.js中你得这样
+define([‘jquery’], function(jquery){})</p> <p>4.现在你需要一个很大的封装去定义每个模块，然后你需要在在require.js的配制文件中将每个模块的路径都配出来，用过requirejs都会遇到的好繁琐</p> <h4 id="对比requirejs-seajs-webpack特有的属性："><a href="#对比requirejs-seajs-webpack特有的属性：" class="header-anchor">#</a> 对比requirejs seajs webpack特有的属性：</h4> <p>1.对 CommonJS 、 AMD 、ES6的语法做了兼容</p> <p>2.对js、css、图片等资源文件都支持打包（css都可以合成多个css文件包，sass和less虽然也是模块化的加载合并，可是css和js分离的关联不大，这里的css可以和js有更大的关联，更细致区分加载的js）</p> <p>3.串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如提供对CoffeeScript、ES6的支持</p> <p>4.有独立的配置文件webpack.config.js</p> <p>5.可以将代码切割成不同的chunk，实现按需加载，降低了初始化时间</p> <p>6.支持 SourceUrls 和 SourceMaps，易于调试</p> <p>7.具有强大的Plugin接口，大多是内部插件，使用起来比较灵活</p> <p>8.webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快</p> <p>9.双服务器模式</p> <h1 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章</h1> <p>AMD、CMD、CommonJs、ES6的对比
+https://blog.csdn.net/tangxiujiang/article/details/81104174</p> <p>浅谈前端架构的工程化、模块化、组件化、规范化
+https://www.imooc.com/article/48008</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/12前端工程化/WebPack原理与实践.html" class="prev">
+        WebPack原理与实践
+      </a></span> <span class="next"><a href="/12前端工程化/前端模块化、组件化、前端工程化的区别.html">
+        前端模块化、组件化、前端工程化的区别
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2da3f8f4.js" defer></script><script src="/assets/js/2.28149a32.js" defer></script><script src="/assets/js/67.b1cf3fea.js" defer></script>
+  </body>
+</html>

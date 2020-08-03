@@ -30,7 +30,7 @@ module.exports = { //侧边栏，路由
     "9.Browsersync网页自动刷新", "10.爬取掘金、简书、CSDN上的markdown文章","11.gitalk"
   ],
   "/19书籍阅读/": ["", "《了不起的Javascript工程师》笔记.md", ],
-  "/20项目/": ["", "Hamburger.md", ],
+  "/20项目/": ["", "1.md","2" ],
   "/总结/": ["", "疑问.md", "收藏.md"]
 
 
