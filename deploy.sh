@@ -17,7 +17,7 @@ cd docs/.vuepress/dist
 #git config user.email "1535445275@qq.com"
 #sudo git add .
 #sudo git commit -m '17'
-sudo git commit -am "18"
+# sudo git commit -am "18"
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master
