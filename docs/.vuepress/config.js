@@ -51,6 +51,7 @@ module.exports = { // 主配置文件
   /* -------------- theme -----------*/
   // string，当你使用自定义主题的时候，需要指定它
   // theme: undefined,
+  //theme: 'vdoing',
   // Object，为当前的主题提供一些配置，这些选项依赖于你正在使用的主题  
   themeConfig: {
     // 导航栏logo
@@ -61,9 +62,12 @@ module.exports = { // 主配置文件
 
     // 侧边栏
     sidebar: require('./sidebar'),
+    //sidebar: 'structuring',
+
+
 
     // 深度
-    sidebarDepth: 4,
+    sidebarDepth: 3,
 
     lastUpdated: '上次更新',
     searchMaxSuggestoins: 10,
@@ -73,8 +77,7 @@ module.exports = { // 主配置文件
         buttonText: 'Refresh'
       }
     },
-    editLinks: true,
-    editLinkText: '在 GitHub 上编辑此页 ！'
+
 
   },
 
@@ -140,5 +143,7 @@ module.exports = { // 主配置文件
   // boolean | Function，是否不开启polyfills，即不兼容低版本浏览器
   // evergreen: false,
 
+  plugins:[
 
+  ]
 }

@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+sudo npm run build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
@@ -12,14 +12,15 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'note.dignified.cn' > CNAME
 
-#git init
+#sudo git init
 #git config user.name "HUANGWEIWEIWEI"
 #git config user.email "1535445275@qq.com"
-sudo git add .
-sudo git commit -m '8th commit'
+#sudo git add .
+#sudo git commit -m '17'
+sudo git commit -am "18"
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master:gh-pages
+git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:HUANGWEIWEIWEI/FEN.git master:gh-pages
