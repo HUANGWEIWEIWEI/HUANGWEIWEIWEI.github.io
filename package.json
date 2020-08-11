@@ -8,13 +8,10 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "server": "npm run build && pm2 start appjs",
-    "deploy": "bash deploy.sh"
+    "d": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "vuepress-theme-vdoing": "^1.4.0"
-  }
+  "dependencies": {}
 }

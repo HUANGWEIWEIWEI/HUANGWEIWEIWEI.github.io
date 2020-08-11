@@ -10,18 +10,19 @@ sudo npm run build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-# echo 'note.dignified.cn' > CNAME
+echo 'note.dignified.cn' > CNAME
 
-#sudo git init
+sudo git init
 #git config user.name "HUANGWEIWEIWEI"
 #git config user.email "1535445275@qq.com"
-#sudo git add .
-#sudo git commit -m '17'
+sudo git add .
+sudo git commit -m '27'
 # sudo git commit -am "19"
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master
+#git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master
 
+git push -f https://github.com/HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master:gh-pages
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:HUANGWEIWEIWEI/FEN.git master:gh-pages
 
@@ -29,3 +30,8 @@ git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master
 # git push -f git@nodeing666:dignified/fen/fen.git master
 
 cd -
+
+# sudo git init
+# sudo git add .
+# sudo git commit -m "23
+# git push -f git@github.com:HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git master

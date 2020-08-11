@@ -1,32 +1,31 @@
 # 项目
->Vuepress搭建的的静态网页，伟伟黄的前端笔记。
 
-### 构建
+>开源且持续更新的前端技术文档，记录并分享自己从0到1的前端学习轨迹。求star~
 
+线上地址: [note.dignified.cn](https://note.dignified.cn)
 
-# clone item
-git clone git@github.com:qiufeihong2018/vuepress-app.git
+## 快速上手
 
-# install dependencies
+### clone item
+git clone https://github.com/HUANGWEIWEIWEI/HUANGWEIWEIWEI.github.io.git
+
+### install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+### serve with hot reload at localhost:8086
 npm run dev
 
-# build for production with minification
+### build for production with minification
 npm run build
 
-# deploy https://username.github.io
+### deploy https://HUANGWEIWEIWEI.github.io
 npm run d
 
-# pm2 deploy
-npm run server 
+## feature
 
-
-
-### feature
-- [x] 可以统计阅读量
-- [x] 支持评论
+- [x] 技术文档
+- [ ] 可以统计阅读量
+- [ ] 支持评论
 - [ ] Algolia搜索
 - [ ] 在 GitHub 上编辑此页
 - [ ] SEO
