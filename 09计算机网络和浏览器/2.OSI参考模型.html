@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2.OSI参考模型 | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1f6703fb.css" as="style"><link rel="preload" href="/assets/js/app.7cfd3afd.js" as="script"><link rel="preload" href="/assets/js/2.7c2e0a4d.js" as="script"><link rel="preload" href="/assets/js/68.a54fecea.js" as="script"><link rel="preload" href="/assets/js/5.bf8043b7.js" as="script"><link rel="prefetch" href="/assets/js/10.a199202b.js"><link rel="prefetch" href="/assets/js/100.973d1ec8.js"><link rel="prefetch" href="/assets/js/101.b90a93b7.js"><link rel="prefetch" href="/assets/js/102.98ac1f0c.js"><link rel="prefetch" href="/assets/js/103.d9c215a7.js"><link rel="prefetch" href="/assets/js/104.5d65fbc4.js"><link rel="prefetch" href="/assets/js/105.bef8cee6.js"><link rel="prefetch" href="/assets/js/106.8137498e.js"><link rel="prefetch" href="/assets/js/107.9a2d8d32.js"><link rel="prefetch" href="/assets/js/108.91221e7a.js"><link rel="prefetch" href="/assets/js/109.74935341.js"><link rel="prefetch" href="/assets/js/11.05cffb54.js"><link rel="prefetch" href="/assets/js/110.bf26cbb0.js"><link rel="prefetch" href="/assets/js/111.42631527.js"><link rel="prefetch" href="/assets/js/112.f23920e3.js"><link rel="prefetch" href="/assets/js/113.e8287c5e.js"><link rel="prefetch" href="/assets/js/114.2329100e.js"><link rel="prefetch" href="/assets/js/115.4bec32d8.js"><link rel="prefetch" href="/assets/js/116.7154ce05.js"><link rel="prefetch" href="/assets/js/117.fbf691f9.js"><link rel="prefetch" href="/assets/js/118.5a34128f.js"><link rel="prefetch" href="/assets/js/119.379e4cb6.js"><link rel="prefetch" href="/assets/js/12.bd400654.js"><link rel="prefetch" href="/assets/js/120.598e648b.js"><link rel="prefetch" href="/assets/js/121.982b9b7b.js"><link rel="prefetch" href="/assets/js/122.8eaec69e.js"><link rel="prefetch" href="/assets/js/123.33e552cb.js"><link rel="prefetch" href="/assets/js/124.a53b101e.js"><link rel="prefetch" href="/assets/js/125.69371d5d.js"><link rel="prefetch" href="/assets/js/126.03a8b253.js"><link rel="prefetch" href="/assets/js/127.d3ee57ee.js"><link rel="prefetch" href="/assets/js/128.6a3426b0.js"><link rel="prefetch" href="/assets/js/129.c7aaea2f.js"><link rel="prefetch" href="/assets/js/13.f5a78c38.js"><link rel="prefetch" href="/assets/js/130.c40b9f00.js"><link rel="prefetch" href="/assets/js/131.47e56597.js"><link rel="prefetch" href="/assets/js/132.853618fc.js"><link rel="prefetch" href="/assets/js/133.745244a8.js"><link rel="prefetch" href="/assets/js/134.df063492.js"><link rel="prefetch" href="/assets/js/135.bf073385.js"><link rel="prefetch" href="/assets/js/136.da6fc2af.js"><link rel="prefetch" href="/assets/js/137.4340c29e.js"><link rel="prefetch" href="/assets/js/138.bcb0c951.js"><link rel="prefetch" href="/assets/js/139.248d092e.js"><link rel="prefetch" href="/assets/js/14.ac1d06ab.js"><link rel="prefetch" href="/assets/js/140.92ea591d.js"><link rel="prefetch" href="/assets/js/141.596f87e5.js"><link rel="prefetch" href="/assets/js/15.ecedfca9.js"><link rel="prefetch" href="/assets/js/16.ee8fa0aa.js"><link rel="prefetch" href="/assets/js/17.67df96c4.js"><link rel="prefetch" href="/assets/js/18.4ab8d709.js"><link rel="prefetch" href="/assets/js/19.9ba3846e.js"><link rel="prefetch" href="/assets/js/20.d8fc77f6.js"><link rel="prefetch" href="/assets/js/21.159f491c.js"><link rel="prefetch" href="/assets/js/22.6d53e019.js"><link rel="prefetch" href="/assets/js/23.c88a646f.js"><link rel="prefetch" href="/assets/js/24.81f5a0c5.js"><link rel="prefetch" href="/assets/js/25.b1d65cf7.js"><link rel="prefetch" href="/assets/js/26.190f5736.js"><link rel="prefetch" href="/assets/js/27.6c00da31.js"><link rel="prefetch" href="/assets/js/28.6aee56fe.js"><link rel="prefetch" href="/assets/js/29.4c49b541.js"><link rel="prefetch" href="/assets/js/3.5e85fdcc.js"><link rel="prefetch" href="/assets/js/30.46ad2c22.js"><link rel="prefetch" href="/assets/js/31.dbbbf982.js"><link rel="prefetch" href="/assets/js/32.5da420f8.js"><link rel="prefetch" href="/assets/js/33.5b6ab24d.js"><link rel="prefetch" href="/assets/js/34.23208694.js"><link rel="prefetch" href="/assets/js/35.c6f53d20.js"><link rel="prefetch" href="/assets/js/36.c18b4f91.js"><link rel="prefetch" href="/assets/js/37.e7b8b9ff.js"><link rel="prefetch" href="/assets/js/38.be4a3f12.js"><link rel="prefetch" href="/assets/js/39.7040e244.js"><link rel="prefetch" href="/assets/js/4.214c66dd.js"><link rel="prefetch" href="/assets/js/40.91851cc6.js"><link rel="prefetch" href="/assets/js/41.112012b0.js"><link rel="prefetch" href="/assets/js/42.fe20d2f5.js"><link rel="prefetch" href="/assets/js/43.6d27b363.js"><link rel="prefetch" href="/assets/js/44.8352cc33.js"><link rel="prefetch" href="/assets/js/45.ab0bc7de.js"><link rel="prefetch" href="/assets/js/46.16bfc8d2.js"><link rel="prefetch" href="/assets/js/47.762e7926.js"><link rel="prefetch" href="/assets/js/48.4e3fb577.js"><link rel="prefetch" href="/assets/js/49.d39d6217.js"><link rel="prefetch" href="/assets/js/50.29e9f8d1.js"><link rel="prefetch" href="/assets/js/51.6095d6bd.js"><link rel="prefetch" href="/assets/js/52.df8225fd.js"><link rel="prefetch" href="/assets/js/53.bcde160c.js"><link rel="prefetch" href="/assets/js/54.30cb1212.js"><link rel="prefetch" href="/assets/js/55.3ec7d6c7.js"><link rel="prefetch" href="/assets/js/56.e3e525f5.js"><link rel="prefetch" href="/assets/js/57.39f005f2.js"><link rel="prefetch" href="/assets/js/58.d69af7e0.js"><link rel="prefetch" href="/assets/js/59.a352d3a0.js"><link rel="prefetch" href="/assets/js/6.b7c61ba1.js"><link rel="prefetch" href="/assets/js/60.de7b9265.js"><link rel="prefetch" href="/assets/js/61.433c57ff.js"><link rel="prefetch" href="/assets/js/62.8dfb2c78.js"><link rel="prefetch" href="/assets/js/63.4d90d359.js"><link rel="prefetch" href="/assets/js/64.e7f370d9.js"><link rel="prefetch" href="/assets/js/65.9c71852f.js"><link rel="prefetch" href="/assets/js/66.eba29aba.js"><link rel="prefetch" href="/assets/js/67.a6c462bf.js"><link rel="prefetch" href="/assets/js/69.260ede44.js"><link rel="prefetch" href="/assets/js/7.499bf40e.js"><link rel="prefetch" href="/assets/js/70.ed02f564.js"><link rel="prefetch" href="/assets/js/71.835fd3be.js"><link rel="prefetch" href="/assets/js/72.dbab8cc7.js"><link rel="prefetch" href="/assets/js/73.80924fab.js"><link rel="prefetch" href="/assets/js/74.ede54dd0.js"><link rel="prefetch" href="/assets/js/75.4d0e9dd3.js"><link rel="prefetch" href="/assets/js/76.311c4ab7.js"><link rel="prefetch" href="/assets/js/77.2f189c53.js"><link rel="prefetch" href="/assets/js/78.e4a2d6f5.js"><link rel="prefetch" href="/assets/js/79.19b5e848.js"><link rel="prefetch" href="/assets/js/8.3525ff20.js"><link rel="prefetch" href="/assets/js/80.5ad884ee.js"><link rel="prefetch" href="/assets/js/81.555bb3aa.js"><link rel="prefetch" href="/assets/js/82.24bd7c19.js"><link rel="prefetch" href="/assets/js/83.2af9cde1.js"><link rel="prefetch" href="/assets/js/84.9361ff2b.js"><link rel="prefetch" href="/assets/js/85.b3ba2103.js"><link rel="prefetch" href="/assets/js/86.8de2f7bc.js"><link rel="prefetch" href="/assets/js/87.0467f1e3.js"><link rel="prefetch" href="/assets/js/88.4f7266c8.js"><link rel="prefetch" href="/assets/js/89.7de85c62.js"><link rel="prefetch" href="/assets/js/9.b0e8a85f.js"><link rel="prefetch" href="/assets/js/90.547a7230.js"><link rel="prefetch" href="/assets/js/91.cba95ce0.js"><link rel="prefetch" href="/assets/js/92.48eb37c8.js"><link rel="prefetch" href="/assets/js/93.2c0a2097.js"><link rel="prefetch" href="/assets/js/94.79de61d2.js"><link rel="prefetch" href="/assets/js/95.9ceca60f.js"><link rel="prefetch" href="/assets/js/96.fab3711b.js"><link rel="prefetch" href="/assets/js/97.ec3690c4.js"><link rel="prefetch" href="/assets/js/98.11585efa.js"><link rel="prefetch" href="/assets/js/99.ae7a2943.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1f6703fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/1.HTML、HTML5概述.html" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/1.CSS、CSS3概述.html" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/01JS概述.html" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/01Vue概述.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/1.Node.js概述.html" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/1.数据库概述.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/01数据结构概述.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/01算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/1.计算机网络.html" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/1.操作系统（基础）.html" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11小程序/01小程序概述.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/01前端工程化概述.html" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/01前端安全概述.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/0.vscode相关.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/01chrome概述.html" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/1.git概述.html" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/1.学习中遇到的生词.html" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/0书籍汇总.html" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/0项目汇总.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/0.实战中遇到的问题归纳.html" class="nav-link">
+  实战问题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/1.HTML、HTML5概述.html" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/1.CSS、CSS3概述.html" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/01JS概述.html" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/01Vue概述.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/1.Node.js概述.html" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/1.数据库概述.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/01数据结构概述.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/01算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/1.计算机网络.html" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/1.操作系统（基础）.html" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11小程序/01小程序概述.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/01前端工程化概述.html" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/01前端安全概述.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/0.vscode相关.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/01chrome概述.html" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/1.git概述.html" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/1.学习中遇到的生词.html" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/0书籍汇总.html" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/0项目汇总.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/0.实战中遇到的问题归纳.html" class="nav-link">
+  实战问题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/09计算机网络和浏览器/1.计算机网络.html" class="sidebar-link">1.计算机网络</a></li><li><a href="/09计算机网络和浏览器/2.OSI参考模型.html" class="active sidebar-link">2.OSI参考模型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#_1-应用层" class="sidebar-link">1.应用层</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#_1-1一些比较重要的应用层协议" class="sidebar-link">1.1一些比较重要的应用层协议</a></li><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#应用层常见的模型" class="sidebar-link">应用层常见的模型</a></li><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#_1-4短链接和长链接" class="sidebar-link">1.4短链接和长链接</a></li><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#_1-5dns大概的通信过程" class="sidebar-link">1.5DNS大概的通信过程</a></li><li class="sidebar-sub-header"><a href="/09计算机网络和浏览器/2.OSI参考模型.html#_1-6万维网和http协议" class="sidebar-link">1.6万维网和http协议</a></li></ul></li></ul></li><li><a href="/09计算机网络和浏览器/3.浏览器.html" class="sidebar-link">3.浏览器</a></li><li><a href="/09计算机网络和浏览器/4.http.html" class="sidebar-link">4.http</a></li><li><a href="/09计算机网络和浏览器/5.http1.x、https和2.0的区别.html" class="sidebar-link">5.http1.x、https和2.0的区别.md</a></li><li><a href="/09计算机网络和浏览器/6.从输入url到得到html再到页面渲染以及针对性优化.html" class="sidebar-link">6.从输入url到得到html再到页面渲染以及针对性优化</a></li><li><a href="/09计算机网络和浏览器/X.计算机网络和浏览器相关面试题.html" class="sidebar-link">X.计算机网络和浏览器相关面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_2-osi参考模型"><a href="#_2-osi参考模型" class="header-anchor">#</a> 2.OSI参考模型</h1> <p>OSI（Open System Interconnect），即开放式系统互连。 一般都叫OSI参考模型，是ISO组织在1985年研究的网络互连模型。该体系结构标准定义了网络互连的七层框架（物理层、数据链路层、网络层、传输层、会话层、表示层和应用层），即OSI开放系统互连参考模型</p> <h2 id="_1-应用层"><a href="#_1-应用层" class="header-anchor">#</a> 1.应用层</h2> <p>应用层对应用程序的通信提供服务。</p> <blockquote><p>区分是发送报文还是接收报文<br>
+定义<code>报文类型的语法</code>，比如某字段的意思，例如http中content-type字段是什么意思。<br>
+最后就是进程如何，什么时候把传输层的数据交给应用层。</p></blockquote> <h3 id="_1-1一些比较重要的应用层协议"><a href="#_1-1一些比较重要的应用层协议" class="header-anchor">#</a> 1.1一些比较重要的应用层协议</h3> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200721171302.png" alt="应用层协议及对应功能"></p> <h3 id="应用层常见的模型"><a href="#应用层常见的模型" class="header-anchor">#</a> 应用层常见的模型</h3> <p>第一种是客户端/服务器模型，也就是C/S架构。比如电子邮件、web都是。</p> <p>第二种是P2P模型，每个主机既可以提供服务，也可以请求服务。比如迅雷下载也是使用P2P技术的。</p> <h3 id="_1-4短链接和长链接"><a href="#_1-4短链接和长链接" class="header-anchor">#</a> 1.4短链接和长链接</h3> <p>短连接方式</p> <div class="language-md line-numbers-mode"><pre class="language-md"><code>当客户端有请求时，会建立一个TCP连接，接收到服务器响应后，就断开连接。下次有请求时，再建立连接，收到响应后，再断开。如此循环。这种方式主要有两个缺点：
+建立TCP连接需要3次“握手”，拆除TCP连接需要4次“挥手”，这就需要7个数据包。如果请求和响应各占1个数据包，那么一次短连接的交互过程，有效的传输仅占2/9，这个利用率太低了。
+主动断开TCP连接的一端，TCP状态机会进入TIME<span class="token italic"><span class="token punctuation">_</span><span class="token content">WAIT状态。如果频繁地使用短连接方式，就有可能使客户端的机器产生大量的处于TIME</span><span class="token punctuation">_</span></span>WAIT状态TCP连接。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>长连接方式</p> <div class="language-md line-numbers-mode"><pre class="language-md"><code>客户端和服务器建立TCP连接后，会一直使用这条连接进行数据交互，直到没有数据传输或异常断开。在空闲期间，通常会使用`<span class="token code keyword">`心跳数据包（Keep-Alive）`</span>保持链路不断开。目前长连接方式应用范围比较广泛。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_1-5dns大概的通信过程"><a href="#_1-5dns大概的通信过程" class="header-anchor">#</a> 1.5DNS大概的通信过程</h3> <p>用户主机上运行着DNS的客户端，就是我们的PC机或者手机客户端运行着DNS客户端了</p> <p>浏览器将接收到的url中抽取出域名字段，就是访问的主机名，比如<a href="http://www.baidu.com/" target="_blank" rel="https://dignified.cn">http://www.baidu.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, 并将这个主机名传送给DNS应用的客户端</p> <p>DNS客户机端向DNS服务器端发送一份查询报文，报文中包含着要访问的主机名字段（中间包括一些列缓存查询以及分布式DNS集群的工作）</p> <p>该DNS客户机最终会收到一份回答报文，其中包含有该主机名对应的IP地址</p> <p>一旦该浏览器收到来自DNS的IP地址，就可以向该IP地址定位的HTTP服务器发起TCP连接
+域名</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200721171636.png" alt="1"></p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200721171650.png" alt="2"></p> <h3 id="_1-6万维网和http协议"><a href="#_1-6万维网和http协议" class="header-anchor">#</a> 1.6万维网和http协议</h3> <p>万维网www</p> <p>互联网包含因特网包含万维网。</p> <div class="language-md line-numbers-mode"><pre class="language-md"><code>互联网internet。凡是由能彼此通信的设备组成的网络就叫互联网，即使仅有两台机器（计算机、手机等），不论用何种技术使其彼此通信，都叫互联网，所以，互联网有广域网、城域网及局域网之分，国际标准的互联网写法是internet，字母i一定要小写！
+因特网Internet。而因特网是互联网中的一种，它可不是仅有两台机器组成的网络，而是由上千万台设备组成的网络（该网络具备很大的规模）。因特网使用TCP/IP协议让不同的设备可以彼此通信。但使用TCP/IP协议的网络并不一定是因特网，一个局域网也可以使用TCP/IP协议。
+因特网是基于TCP/IP协议实现的，TCP/IP协议由很多协议组成，不同类型的协议又被放在不同的层，其中，位于应用层的协议就有很多，比如FTP、SMTP、HTTP。所以，因特网提供的服务一般包括有：www（万维网）服务、电子邮件服务（outlook）、远程登录（QQ）服务、文件传输（FTP）服务、网络电话等等。
+万维网。只要应用层使用的是HTTP协议，就称为万维网(World Wide Web)。之所以在浏览器里输入百度网址时，能看见百度网提供的网页，就是因为您的个人浏览器和百度网的服务器之间使用的是HTTP协议在交流。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>万维网使用统一资源定位符作为标识符来访问资源。</p> <p>http协议</p> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200721172409.png" alt=""></p> <p>1.6.2.1http报文头分析</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>方法(method)：客户端希望服务器对资源执行的动作，是一个单独的词，比如，GET、POST或HEAD
+请求URL(request-URL)：要直接与服务器进行对话，只要请求URL是资源的绝对路径就可以了，服务器可以假定自己是URL的主机/端口
+版本(version)：报文所使用的HTTP版本。其格式：HTTP/&lt;主要版本号&gt;.&lt;次要版本号&gt;
+状态码(status-code)：状态码是三位数字，描述了请求过程中所发生的情况。每个状态码的第一位数字都用于描述状态的一般类别(比如，“成功”、“出错”等等)
+原因短语(reason-phrase)：数字状态码的可读版本，包含行终止序列之前的所有文本。原因短语只对人类有意义，因此，尽管响应行HTTP/1.0 200 NOT OK和HTTP/1.0 200 OK中原因短语的含义不同，但同样都会被当作成功指示处理
+头部(header)：可以有零个或多个头部，每个首部都包含一个名字，后面跟着一个冒号(:)，然后是一个可选的空格，接着是一个值，最后是一个CRLF首部是由一个空行(CRLF)结束的，表示了头部列表的结束和实体主体部分的开始
+实体的主体部分(entity-body)：实体的主体部分包含一个由任意数据组成的数据块，并不是所有的报文都包含实体的主体部分，有时，报文只是以一个CRLF结束。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>1.6.2.2通用头部</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Connection：允许客户端和服务器指定与请求/响应连接有关的选项，http1.1默认是keep-alive
+Date：提供日期和时间标志，说明报文是什么时间创建的
+Transfer-Encoding：告知接收端为了保证报文的可靠传输，对报文采用了什么编码方式
+Cache-Control：用于随报文传送缓存指示
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>1.6.2.3请求头部</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Host：给出了接收请求的服务器的主机名和端口号
+Referer：提供了包含当前请求URI的文档的URL
+User-Agent：将发起请求的应用程序名称告知服务器
+Accept：告诉服务器能够发送哪些媒体类型
+Accept-Encoding：告诉服务器能够发送哪些编码方式
+Accept-Language：告诉服务器能够发送哪些语言
+Range：如果服务器支持范围请求，就请求资源的指定范围
+If-Range：允许对文档的某个范围进行条件请求
+Authorization：包含了客户端提供给服务器，以便对其自身进行认证的数据
+Cookie：客户端用它向服务器传送数据
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>1.6.2.4响应头部</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Age：(从最初创建开始)响应持续时间
+Server：服务器应用程序软件的名称和版本
+Accept-Ranges：对此资源来说，服务器可接受的范围类型
+Set-Cookie：在客户端设置数据，以便服务器对客户端进行标识
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>1.6.2.5实体首部</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Allow：列出了可以对此实体执行的请求方法
+Location：告知客户端实体实际上位于何处，用于将接收端定向到资源的位置(URL)上去
+Content-Base：解析主体中的相对URL时使用的基础URL
+Content-Encoding：对主体执行的任意编码方式
+Content-Language：理解主体时最适宜使用的自然语言
+Content-Length：主体的长度
+Content-Type：这个主体的对象类型
+ETag：与此实体相关的实体标记
+Last-Modified：这个实体最后一次被修改的日期和时间
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>1.6.2.6实体的主体部分</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>该部分其实就是HTTP要传输的内容，是可选的。HTTP报文可以承载很多类型的数字数据，比如，图片、视频、HTML文档电子邮件、软件应用程序等等。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2.表示层
+3.会话层
+4.传输层</p> <p>传输层是只有计算机才有的层次，主要提供是进程间逻辑通信 + 可靠传输或者不可靠的功能。</p> <p>1.可靠传输协议TCP + 不可靠传输协议UDP
+TCP面向连接，可靠，不提供广播和多播，而且时间延迟比较大，适用于大文件传输。
+UDP无连接，收到的报也不确认，但时间延迟小，适用于小文件。
+2.端口号有什么用
+端口号可以用来标识同一个主机上通信的不同应用程序（就是哪个应用程序在使用这个端口）。
+那为什么一个端口只能分配给一个应用程序，不能是多个呢？</p> <p>如果服务器有两个应用程序A，B，分别启动了A服务和B服务，它们监听同一个端口，那有数据来的时候，服务器无法判断这个数据到底是给A，还是给B。
+UDP协议
+特点
+无连接的
+最大努力交付
+面向报文
+没有拥塞控制
+首部较小，只有8字节，这也是减少网络传输开销的一方面
+UDP首部</p> <div class="language- extra-class"><pre><code>					16位端口号占了2B，也就是16位，说明端口号的范围是0 - 65535。源端口号可以没有，因为不希望收到对方的回应，可以写全0，目的端口是一定要有的。
+					16位UDP长度是指首部+数据的长度，比如数据2B，首部固定是8B，那么UDP长度就是2+8 = 10B
+					16位UDP校验和，是用来校验首部和数据有错误，如果有错就丢弃掉。比如说目的主机找不到对应的端口号，就会给发送方返回一个ICMP，‘端口不可达’的差错报文。
+			TCP协议
+				特点
+					TCP是面向连接的传输层协议。比如说TCP的三次握手，四次分手，针对的都是连接。
+					每一条TCP连接只能有两个端点，每一条TCP连接是点对点的。也就是说TCP是不同计算机之间的进程的通信。
+					TCP提供可靠交付的服务，无差错，不丢失，不重复，按序到达。总结一下就是，可靠有序，不丢不重。
+					TCP提供全双工通信。全双工指的是连接双方可以同时收发数据。在收发两端都有发送缓存和接收缓存，发送缓存就是一个准备发送的队列，接收缓存是一个准备接收的队列。
+					TCP面向字节流。如图解释一下什么是面向字节流：
+						
+						图中的1，2，3，4.....数据块，每一个表示一个字节。tcp将应用层的数据变为了这样的字节进行发送，比如玩过node同学，知道一个buffer，buffer就是字节流。
+				首部
+					如下图所示，我们看一下比较重要的一些首部字段，这里我们介绍固定的20字节的TCP首部
+					
+					源端口和目的端口分别是指发送方应用程序的端口和目的方应用程序的端口号。
+					序号是指在一个TCP连接中传送的字节流中的每一个字节都按顺序编号，本字段表示本报文段所发送数据的第一个字节的序号。
+					确认号是指期望收到对方下一个报文段的第一个数据字节的序号。弱确认好位n，则证明到需要N-1为止所有的数据都已经正确收到。如下图，我们举例说明一下
+					
+					接收方收到了1，2，3个字节组成的数据包，然后接收方就会发送一个确认报文给发送方，其中确认报文的确认号就应该是4，因为1，2，3这三个字节的组成的数据包已经收到了。
+					数据偏移指的是TCP报文段的数据起始处举例TCP报文段的起始处有多远。
+					6个控制位的作用
+						ACK
+							置1时表示确认号合法，为0的时候表示数据段不包含确认信息，确认号被忽略
+						PSH
+							置1时请求的数据段在接收方得到后就可直接送到应用程序，而不必等到缓冲区满时才传送
+						RST
+							置1时重建连接。如果接收到RST位时候，通常发生了某些错
+						SYN
+							置1时用来发起一个连接
+						FIN
+							置1时表示发端完成发送任务。用来释放连接，表明发送方已经没有数据发送了
+						URG
+							紧急指针，告诉接收TCP模块紧要指针域指着紧要数据
+				TCP建立连接
+					
+					首先客户端要发送一个数据包告诉服务器要建立连接，根据上面我们了解到的控制位信息，建立连接需要把SYN置为1，seq指的是序号，是随机产生的。
+					然后服务器收到该数据包后，会为该TCP连接分配缓存和变量，缓存指的是一个字节流队列。（发送方和接收方都有这个队列，而且如果双方需要互相通信，那么双方都会有发送缓存和接收缓存），接着会返回一个确认报文，其中SYN控制位置为1，意思是允许建立连接，ACK是确认号，确认收到了发送方的包，并且会设一个seq序号，也为一个随机数。小写ack是确认号，也就是接下来希望发送方要发的数据从哪开始。
+					最后，客户端需要给服务器端返回一个确认，此时SYN控制位变为0，意思这不是建立连接的请求了，要正式发数据了，ACK是确认码，意思是收到了服务器的确认请求了。
+				TCP释放连接
+					
+					客户端发起请求，请求断开链接。FIN=1，seq=u。u是之前传送过来的最后一个字节的序号+1。
+						FIN：用来释放一个链接，当FIN=1的时候，表明此报文的发送方已经完成了数据的发送，没有新的数据要传送，并要求释放链接。
+					客户端等着服务器返回确认
+					服务器收到客户端的请求断开链接的报文之后，返回确认信息。ACK=1，seq=v，ack=u+1。这个时候，客户端不能给服务器发送信息报文，只能接收。但是服务器要是还有信息要传给服务器，仍然能传送。这里的v是什么意思呢，这就取决于服务器发送给客户端之前的一个包确认号是多少了。
+					当服务器也没有了可以传的信息之后，给客户端发送请求结束的报文。FIN=1，ACK=1，ack=u+1，seq=w。这里的w，跟上面的v是一个意思，为什么不都是v呢，因为这一步和上一步中间可能还在发数据呢，所以seq这个数据发送的字节流序号可能要变。
+					客户端接收到FIN=1的报文之后，返回确认报文，ACK=1，seq=u+1，ack=w+1。发送完毕之后，客户端进入等待状态，等待两个时间周期。关闭。
+						为什么最后还要等待两个时间周期呢？
+					客户端的最后一个ACK报文在传输的时候丢失，服务器并没有接收到这个报文。这个候时候服务器就会超时重传这个FIN消息，然后客户端就会重新返回最后一个ACK报文，等待两个时间周期，完成关闭。
+					如果不等待这两个时间周期，服务器重传的那条消息就不会收到。服务器就因为接收不到客户端的信息而无法正常关闭。
+				TCP3次握手4次挥手常见面试题
+					为什么连接的时候是三次握手，关闭的时候却是四次握手？
+						关闭连接时，服务器收到对方的FIN报文时，仅仅表示对方不再发送数据了但是还能接收数据，而自己也未必全部数据都发送给对方了，所以己方可以立即关闭，也可以发送一些数据给对方后，再发送FIN报文给对方来表示同意现在关闭连接
+						因此，己方ACK和FIN一般都会分开发送，从而导致多了一次。
+					为什么不能用两次握手进行连接？
+						若建立连接只需两次握手，客户端并没有太大的变化，仍然需要获得服务端的应答后才进入ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状态。
+						此时如果网络拥塞，客户端发送的连接请求迟迟到不了服务端，客户端便超时重发请求，如果服务端正确接收并确认应答，双方便开始通信，通信结束后释放连接。此时，如果那个失效的连接请求抵达了服务端，由于只有两次握手，服务端收到请求就会进入ESTABLISHED状态，等待发送数据或主动发送数据
+						但此时的客户端早已进入CLOSED状态，服务端将会一直等待下去，这样浪费服务端连接资源
+						但我觉得这个只是两次握手可能造成的问题，最关键的是两次握手有服务器对客户端的起始序列号做了确认，但客户端却没有对服务器的起始序列号做确认，不能保证传输的可靠性。
+					如果已经建立了连接，但是客户端突然出现故障了怎么办？
+						TCP保活计时器 每次客户端请求服务器会重置计时器，当2小时之内没收到客户端任何数据时，会每隔75s向客户端发一个探测报文，若接连发送10个，客户端都没有反应，则认为客户端故障，关闭连接。
+					什么是SYN洪泛攻击？
+						SYN洪泛攻击就是利用TCP协议的特性（三次握手）。
+						攻击者发送TCP的 SYN，SYN是TCP三次握手中第一个数据包，而当服务器返回ACK后，该攻击者就不对其进行再确认，那这个TCP连接就处于挂起状态，也就是半连接状态，服务器收不到再确认的话，还会重复发送ACK给攻击者。
+						这样更加会浪费服务器资源。攻击者就对服务器发送大量的这种TCP连接，由于每一个连接都无法完成三次握手，所以就在服务器上，这些TCP连接会因为挂起状态而消耗CPU和内存，最后服务器可能死机。
+					序号（ISN）为什么要随机？ 增加安全性，为了避免被第三方猜测到，从而被第三方伪造的RST报文Reset。 三次握手的第一次可以携带数据吗？为何？
+						不可以，三次握手还没有完成。而且这样会放大SYN FLOOD（SYN洪泛）攻击。
+						如果攻击者伪造了成千上万的握手报文，携带了1K+ 字节的数据，而接收方会开辟大量的缓存来容纳这些巨大数据，内存会很容易耗尽，从而拒绝服务。
+					三次握手的第三次可以携带数据吗？为何？
+						第三次握手，此时客户端已经处于ESTABLISHED状态。对于客户端来说，他已经建立起连接了，并且已经知道服务器的接收和发送能力是正常的。所以也就可以携带数据了。
+				TCP如何实现可靠传输
+					校验。伪首部是为了增加TCP校验和的检错能力：通过伪首部的目的IP地址来检查TCP报文是否收错了、通过伪首部的传输层协议号来检查传输层协议是否选对了。需要注意的是，伪首部实际上是不存在的，只是用来验证TCP报文是否出错。
+					序号。之前我们提到TCP是面向字节流的，比如第一个字节就是序号1，第二个字节就是序号2。 而在TCP报文格式介绍的时候，有一个序号字段，这个指的是一个报文段第一个字节的序号。报文段就是你每个数据包。有了序号，就能保证数据是有序的传入应用层。
+					确认。发送方在收到接收方的确认包之后，才继续发送剩下的数据。
+					重传。TCP的发送方在规定的时间内没有收到确认就要重传已发送的报文段（超时重传）。重传时间是动态改变的，依据的是RTTS（加权平均往返时间）。
+				TCP的流量控制
+					TCP通过滑动窗口的机制来实现流量控制。
+						TCP 中采用滑动窗口来进行传输控制，滑动窗口的大小意味着接收方还有多大的缓冲区可以用于接收数据。发送方可以通过滑动窗口的大小来确定应该发送多少字节的数据。
+						当滑动窗口为 0时，发送方一般不能再发送数据报，但有两种情况除外，一种情况是可以发送紧急数据，例如，允许用户终止在远端机上的运行进程。另一种情况是发送方可以发送一个 1 字节的数据报来通知接收方重新声明它希望接收的下一字节及发送方的滑动窗口大小。
+				 TCP的拥塞控制
+					如果网络出现拥塞，分组将会丢失，此时发送方会继续重传，从而导致网络拥塞程度更高。因此当出现拥塞时，应当控制发送方的速率。这一点和流量控制很像，但是出发点不同。流量控制是为了让接收方能来得及接收，而拥塞控制是为了降低整个网络的拥塞程度。
+					TCP 主要通过四个算法来进行拥塞控制：慢开始、拥塞避免、快重传、快恢复。
+					发送方需要维护一个叫做拥塞窗口（cwnd）的状态变量，注意拥塞窗口与发送方窗口的区别：拥塞窗口只是一个状态变量，实际决定发送方能发送多少数据的是发送方窗口。
+					为了便于讨论，做如下假设：
+					接收方有足够大的接收缓存，因此不会发生流量控制；
+					虽然 TCP 的窗口基于字节，但是这里设窗口的大小单位为报文段。
+						慢开始与拥塞避免
+							发送的最初执行慢开始，令 cwnd = 1，发送方只能发送 1 个报文段；当收到确认后，将 cwnd 加倍，因此之后发送方能够发送的报文段数量为：2、4、8 ...
+							注意到慢开始每个轮次都将 cwnd 加倍，这样会让 cwnd 增长速度非常快，从而使得发送方发送的速度增长速度过快，网络拥塞的可能性也就更高。设置一个慢开始门限 ssthresh，当 cwnd &gt;= ssthresh 时，进入拥塞避免，每个轮次只将 cwnd 加 1。
+							如果出现了超时，则令 ssthresh = cwnd / 2，然后重新执行慢开始。
+						快重传与快恢复
+							在接收方，要求每次接收到报文段都应该对最后一个已收到的有序报文段进行确认。例如已经接收到 M1 和 M2，此时收到 M4，应当发送对 M2 的确认。
+							在发送方，如果收到三个重复确认，那么可以知道下一个报文段丢失，此时执行快重传，立即重传下一个报文段。例如收到三个 M2，则 M3 丢失，立即重传 M3。
+							在这种情况下，只是丢失个别报文段，而不是网络拥塞。因此执行快恢复，令 ssthresh = cwnd / 2 ，cwnd = ssthresh，注意到此时直接进入拥塞避免。
+							慢开始和快恢复的快慢指的是 cwnd 的设定值，而不是 cwnd 的增长速率。慢开始 cwnd 设定为 1，而快恢复 cwnd 设定为 ssthresh。
+		网络层
+			功能
+				网络层主要任务是将分组(分组的概念是大多数计算机网络都不能连续地传送任意长的数据，所以实际上网络系统把数据分割成小块，然后逐块地发动，这种小块就称作分组)从一台主机移动到另一台主机，从而提供了主机到主机的通信服务和各种形式的进程到进程的通信。
+			一些概念
+				分组交换
+					当主机H1要向另一主机H2发送数据（报文）时，首先将数据划分成若干个等长的分组，然后将这些分组一个接一个地发往里与H1相联的路由A ,当A接到分组后，先放入缓冲区，再按一定的路由算法确定该分组下一步将发注哪个结点，如此一个结点一个结点传递，直到最终目的H2。
+					这一段话比较啰嗦，简单来说分组就是分数据块，同时还具有无需建立连接，存储转发（存储转发是指以太网交换机的控制器先将输入端口到来的数据包缓存起来，先检查数据包是否正确，并过滤掉冲突包错误），动态分配路线（交换设备会根据网络状况选择不同的路线，比如路由器）的优点。
+				数据报
+					数据报是通过网络传输的数据的基本单元，包含一个报头（header）和数据本身。说白了，就是带地址的数据，比如你的写了一句微信&quot;你好&quot;，这串文字本上加上源地址，目的地址，就是数据报。
+				数据报格式
+					首部的固定部分是20字节，共20 * 8 = 160比特（1字节=8比特）
+</code></pre></div><p>0 - 4比特是版本号，版本有ipv4/ipv6
+首部长度，单位是4B，最小为5, 为什么是5呢？因为首部至少20字节，所以4* 5就是20字节
+区分服务不用看。
+总长度是，首部+数据
+生存时间是TTL，它告诉网络，数据包在网络中的时间是否太长而应被丢弃。每经过一个路由器减一，变成0就丢弃
+协议是指数据部分用的什么协议，我们只需要知道TCP协议用6表示，UDP协议用17表示即可。
+首部校验和占16位。这个字段只检验数据报的首部，但不包括数据部分。
+目的地址和源地址都是IP地址，目的地址是通过DNS查询得来的。
+IP分片
+为什么要分片呢？
+链路层数据帧封装的数据大小是有限制的，以太网的MTU（MTU是指一种通信协议的某一层上面所能通过的最大数据包大小）是1500字节。
+接下来我们就看看在ip数据包上，哪些字段标识了分片的数据呢？
+标识是在同一数据的分片时相同。
+标志占3位，但只有两位有意义，第一个位叫MF，MF=1即表示后面“还有分片”的数据报。MF=0表示这已是若干数据报片中的最后一个。
+标志字段中间的一位记为DF(Don’t Fragment)，意思是“不能分片”。只有当DF=0时才允许分片。
+片偏移，较长的分组在分片后，某片在原分组中的相对位置。
+ip地址分类
+A类：1.0.0.0~126.255.255.255
+B类：128.0.0.0~191.255.255.255
+C类：192.0.0.0~223.255.255.255
+D类：224.0.0.0~239.255.255.255
+E类：240.0.0.0~254.255.255.255
+其中127.0.0.0~127.255.255.255用于环回测试，D类地址用于组播，E类地址用于科研
+这里需要注意的是，你发没发现，为什么我们前端启动webpack测试环境的时候，一般地址都是192.168.<em>.</em>(* 是指0-255的数字); 在公司和家里都是这个网段，不是很奇怪吗，你家里的网段怎么和公司一样呢？
+其实是因为有一部分叫私有IP地址，是不能拿到网络上跟别的计算机通信的。只能是局域网自己内部用。比如说有：
+可以看到，C类私有地址就是192.168网段，每个局域网都可以有这些私有IP。
+还有一些特殊地址，需要了解</p> <div class="language- extra-class"><pre><code>						注意，这里的全1是指，ipv4地址由4个字节组成，每一个字节是8位，8位全一就是十进制的255, 即255.255.255.255。
+						第一行，全一，代表是255.255.255.255，在本网络的目的地址写这个的话，就会内网广播
+						第二行，网络号特定值，主机号是全0，比如，192.169.10.1，这是c类网络，所以网络号是192.169.10，主机号是1，当主机号全0时，就是0，表示192.169.10.0这个网段
+						第三行，还是192.169.10.1这个c类地址，主机号都是1，也就是8个1，代表255，所以192.169.10.255表示本网段的广播地址
+						第四行，大家最熟悉不过了，127作为网络号，主机号非全0或1，比如说127.0.0.1代表本机，称为环回地址。
+				网络地址转换NAT
+					在ip地址分类里面，我们知道私有ip地址是不能跟外网交互的，在小公司大多数计算机的地址都是192.168网段，都是私有ip地址，它是怎么跟外网交互数据的呢，这里就引出来一个知识点叫网络地址转换NAT。
+					
+					如上图所示，192.168.0.3，192.168.0.4都是私有网段上的，它们无法跟外网通信，这个时候由于路由器安装了NAT软件，就可以将自己的ip地址，即路由器的ip地址172.38.1.5作为内网的代理，去访问外网，外网返回来的数据，经过路由转换，转换成内网的192.168网段的私有地址。
+				子网划分和子网掩码
+					为什么划分子网
+						例如，一个A类网络可以容纳16777214台主机。
+						但是在实际运用中，不可能把一个A类网络只用于一个子网，因为那样管理起来很不方便，也会出现广播风暴等种种问题，所以需要根据实际需求把它划分为若干个较小的子网。一个B类网络可以容纳65534台主机，往往也是需要划分子网的。
+						即便一个小型企业内部，为了部门之间的职能的需要，配置那些电脑可以互相访问，哪些不能互相访问，就需要通过划分子网的方法来实现。
+					
+						如上图右侧，我们将145.13.0.0这个网段划分了三个子网，其中一个是145.13.3.0，一个是145.13.21.0，问题来了，如果一个网络包来了，网络包要交给的ip地址是145.13.3.10，我们怎么知道给哪个子网呢？
+						方法是将目的包的ip地址，跟子网的子网掩码相与预算（二进制与预算规则是，1跟1得1，其它为0），也就是目的地址145.13.3.10跟子网145.13.3.0的子网掩码255.255.255.0的与预算，得到的结果是145.13.3.0，所以发送到的子网就是145.13.3.0。
+						这里有人会问什么是子网掩码，子网掩码的格式跟IP是一样的，0，0，0，0 到 255.255.255.255，主要是帮助我们划分子网的，了解到这里对我们前端就够了。
+			ARP协议
+				我们简单回顾一下以太网的帧的格式
+				
+				上图有一个源地址和目的地址，这两个地址都是指的mac地址，mac地址是什么呢？简单说来就是两台相邻的路由器A和B，A怎么把数据传给B呢，它总要知道B的物理地址吧，物理地址就像门牌号一样，我要知道你住在哪里，才能把数据送过去吧？
+				首先你肯定知道自己的mac地址是多少，因为在网卡上有，问题在于，别人的mac地址是多少？ARP协议就是来帮你找mac地址的。
+				ARP协议的过程
+					
+					每台主机都会在自己的ARP缓冲区中建立一个 ARP列表，以表示IP地址和MAC地址的映射关系
+					当源主机需要将一个数据包要发送到目的主机时，会首先检查自己 ARP列表中是否存在该IP地址对应的MAC地址
+					如果有，就直接将数据包发送到这个MAC地址；如果没有，就向本地网段发起一个ARP请求的广播包，查询此目的主机对应的MAC地址
+					此ARP请求数据包里包括源主机的IP地址、硬件地址、以及目的主机的IP地址。网络中所有的主机收到这个ARP请求后，会检查数据包中的目的IP是否和自己的IP地址一致
+					如果不相同就忽略此数据包；如果相同，该主机首先将发送端的MAC地址和IP地址添加到自己的ARP列表中
+					如果ARP表中已经存在该IP的信息，则将其覆盖，然后给源主机发送一个 ARP响应数据包，告诉对方自己是它需要查找的MAC地址
+					源主机收到这个ARP响应数据包后，将得到的目的主机的IP地址和MAC地址添加到自己的ARP列表中，并利用此信息开始数据的传输
+					如果源主机一直没有收到ARP响应数据包，表示ARP查询失败
+			DHCP协议
+			ICMP协议
+				功能
+					确认IP包是否成功到达目标地址
+					通知在发送过程中IP包被丢弃的原因
+			路由器
+				子主题 1
+		数据链路层
+			数据链路层的主要功能
+				(1) 封装成帧 数据链路层并不是无脑转发boss的信息，她要把文件编号封装一下。封装的网络数据包，在链路层就叫数据帧。
+				(2)透明传输
+</code></pre></div><p>透明传输是指不管boss下达的任何信息，比如文件里有裁掉这个秘书的信息，秘书都要原原本本的传输。帧的数据部分可能有跟帧首部完全一样的字符，这时候就要采取一定的措施，让接受方不要被被误导，能让接收方知道哪些是帧的首部哪些是帧的数据。这个问题有没有类似js的转义字符的问题，比如字符串<code>&lt;div&gt;</code>到底是指div标签呢，还是div字符串呢？
+(3)差错控制
+差错控制是在文件送到B公司小秘书手里的时候，快递包上写着5个文件，秘书一看只有3个文件，就会让傻子重新发送有没有送到的文件。差错控制的方法有CRC循环冗余码，这个就不细讲了，我自己也不甚了解，只知道链路层的帧，会有一个FCS位留给这个码，用来判断一个帧是否出错。
+(4)差错纠正
+差错纠正是链路层知道1，2，3，4，5个文件，丢失的两个文件到底是哪两个，并且能通过重新发送没有的文件来纠正。
+(5)流量控制 比如说发送方发送速度特别快，接收方接收速度特别慢，会造成传输出错。</p> <p>这里需要注意的是，传输层TCP也有流量控制功能，区别在于TCP是端到端的流量控制，链路层是点到点（比如一个路由器到下一个路由器）
+网桥Bridge
+实现物理层和数据链路层的协议转换
+网桥根据MAC帧的目的地址进行转发和过滤。当网桥收到一个帧时，并不会向所有接口转发此帧，而是先检查此帧的目的MAC地址，然后再确定将该帧转发到哪一个口，或者是把它丢弃。
+这里需要注意的是，网桥连接的是不同的网段，同一网段指的是IP地址和子网掩码(讲ip地址的时候会细讲)相与得到相同的网络地址。
+交换机Switch
+冲突域： 是指同一时间只能由一台设备发送信息的范围。
+广播域：如果站点发出一个广播信号，所有能接收到这个信号的设备范围称为广播域
+物理层
+作用
+对于物理层，有人会说，这不就是网线吗，比如家里连接路由器的网线，电线杆上的光纤？其实不然，物理层更多的是规定一种标准
+那物理层到底有哪些主要任务呢？
+比如说，规定了电气特性，信号的电平用+10V - +15V表示二进制的0，用-10V - -15V表示二进制的1，只要条网线能表示这个特性，就不管你用什么材料了。
+当然还有其它特性，我们不需要了解，知道物理层是规定传输媒体接口的标准即可。
+光纤宽带上网的数据传输方式
+首先计算机网卡传输出来的数据是电信号，光纤传输的是光脉冲信号，有光脉冲表示1，无光脉冲表示0。
+而可见光的频率大约是10的8次方MHz，因此光纤通信系统的带宽远远大于其它各种传输媒体的带宽
+所以我们计算机传输数据需要先把电信号转为光信号，然后光信号快到服务器的时候，再把光信号转为电信号。
+物理层设备中继器Repeater
+中继器可以对信号进行再生和还原，增加信号的传输距离。</p> <p>需要注意的是，中继器两端连接不同的网段，而不是子网。什么叫不同的网段呢，需要在网络层学习IP分类之后才能够理解这个概念，这里简单的理解为，不同的网段就是不同路由器连接的网络。
+集线器Hub
+一种特殊的中继器</p> <div class="gitalk-container"><div id="gitalk-container"></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/09计算机网络和浏览器/1.计算机网络.html" class="prev">
+        1.计算机网络
+      </a></span> <span class="next"><a href="/09计算机网络和浏览器/3.浏览器.html">
+        3.浏览器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7cfd3afd.js" defer></script><script src="/assets/js/2.7c2e0a4d.js" defer></script><script src="/assets/js/68.a54fecea.js" defer></script><script src="/assets/js/5.bf8043b7.js" defer></script>
+  </body>
+</html>

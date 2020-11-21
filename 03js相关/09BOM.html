@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.JS BOM | FE Note</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/avater.jpg">
+    <meta name="description" content="持续更新的前端学习笔记">
+    <link rel="preload" href="/assets/css/0.styles.1f6703fb.css" as="style"><link rel="preload" href="/assets/js/app.7cfd3afd.js" as="script"><link rel="preload" href="/assets/js/2.7c2e0a4d.js" as="script"><link rel="preload" href="/assets/js/28.6aee56fe.js" as="script"><link rel="preload" href="/assets/js/5.bf8043b7.js" as="script"><link rel="prefetch" href="/assets/js/10.a199202b.js"><link rel="prefetch" href="/assets/js/100.973d1ec8.js"><link rel="prefetch" href="/assets/js/101.b90a93b7.js"><link rel="prefetch" href="/assets/js/102.98ac1f0c.js"><link rel="prefetch" href="/assets/js/103.d9c215a7.js"><link rel="prefetch" href="/assets/js/104.5d65fbc4.js"><link rel="prefetch" href="/assets/js/105.bef8cee6.js"><link rel="prefetch" href="/assets/js/106.8137498e.js"><link rel="prefetch" href="/assets/js/107.9a2d8d32.js"><link rel="prefetch" href="/assets/js/108.91221e7a.js"><link rel="prefetch" href="/assets/js/109.74935341.js"><link rel="prefetch" href="/assets/js/11.05cffb54.js"><link rel="prefetch" href="/assets/js/110.bf26cbb0.js"><link rel="prefetch" href="/assets/js/111.42631527.js"><link rel="prefetch" href="/assets/js/112.f23920e3.js"><link rel="prefetch" href="/assets/js/113.e8287c5e.js"><link rel="prefetch" href="/assets/js/114.2329100e.js"><link rel="prefetch" href="/assets/js/115.4bec32d8.js"><link rel="prefetch" href="/assets/js/116.7154ce05.js"><link rel="prefetch" href="/assets/js/117.fbf691f9.js"><link rel="prefetch" href="/assets/js/118.5a34128f.js"><link rel="prefetch" href="/assets/js/119.379e4cb6.js"><link rel="prefetch" href="/assets/js/12.bd400654.js"><link rel="prefetch" href="/assets/js/120.598e648b.js"><link rel="prefetch" href="/assets/js/121.982b9b7b.js"><link rel="prefetch" href="/assets/js/122.8eaec69e.js"><link rel="prefetch" href="/assets/js/123.33e552cb.js"><link rel="prefetch" href="/assets/js/124.a53b101e.js"><link rel="prefetch" href="/assets/js/125.69371d5d.js"><link rel="prefetch" href="/assets/js/126.03a8b253.js"><link rel="prefetch" href="/assets/js/127.d3ee57ee.js"><link rel="prefetch" href="/assets/js/128.6a3426b0.js"><link rel="prefetch" href="/assets/js/129.c7aaea2f.js"><link rel="prefetch" href="/assets/js/13.f5a78c38.js"><link rel="prefetch" href="/assets/js/130.c40b9f00.js"><link rel="prefetch" href="/assets/js/131.47e56597.js"><link rel="prefetch" href="/assets/js/132.853618fc.js"><link rel="prefetch" href="/assets/js/133.745244a8.js"><link rel="prefetch" href="/assets/js/134.df063492.js"><link rel="prefetch" href="/assets/js/135.bf073385.js"><link rel="prefetch" href="/assets/js/136.da6fc2af.js"><link rel="prefetch" href="/assets/js/137.4340c29e.js"><link rel="prefetch" href="/assets/js/138.bcb0c951.js"><link rel="prefetch" href="/assets/js/139.248d092e.js"><link rel="prefetch" href="/assets/js/14.ac1d06ab.js"><link rel="prefetch" href="/assets/js/140.92ea591d.js"><link rel="prefetch" href="/assets/js/141.596f87e5.js"><link rel="prefetch" href="/assets/js/15.ecedfca9.js"><link rel="prefetch" href="/assets/js/16.ee8fa0aa.js"><link rel="prefetch" href="/assets/js/17.67df96c4.js"><link rel="prefetch" href="/assets/js/18.4ab8d709.js"><link rel="prefetch" href="/assets/js/19.9ba3846e.js"><link rel="prefetch" href="/assets/js/20.d8fc77f6.js"><link rel="prefetch" href="/assets/js/21.159f491c.js"><link rel="prefetch" href="/assets/js/22.6d53e019.js"><link rel="prefetch" href="/assets/js/23.c88a646f.js"><link rel="prefetch" href="/assets/js/24.81f5a0c5.js"><link rel="prefetch" href="/assets/js/25.b1d65cf7.js"><link rel="prefetch" href="/assets/js/26.190f5736.js"><link rel="prefetch" href="/assets/js/27.6c00da31.js"><link rel="prefetch" href="/assets/js/29.4c49b541.js"><link rel="prefetch" href="/assets/js/3.5e85fdcc.js"><link rel="prefetch" href="/assets/js/30.46ad2c22.js"><link rel="prefetch" href="/assets/js/31.dbbbf982.js"><link rel="prefetch" href="/assets/js/32.5da420f8.js"><link rel="prefetch" href="/assets/js/33.5b6ab24d.js"><link rel="prefetch" href="/assets/js/34.23208694.js"><link rel="prefetch" href="/assets/js/35.c6f53d20.js"><link rel="prefetch" href="/assets/js/36.c18b4f91.js"><link rel="prefetch" href="/assets/js/37.e7b8b9ff.js"><link rel="prefetch" href="/assets/js/38.be4a3f12.js"><link rel="prefetch" href="/assets/js/39.7040e244.js"><link rel="prefetch" href="/assets/js/4.214c66dd.js"><link rel="prefetch" href="/assets/js/40.91851cc6.js"><link rel="prefetch" href="/assets/js/41.112012b0.js"><link rel="prefetch" href="/assets/js/42.fe20d2f5.js"><link rel="prefetch" href="/assets/js/43.6d27b363.js"><link rel="prefetch" href="/assets/js/44.8352cc33.js"><link rel="prefetch" href="/assets/js/45.ab0bc7de.js"><link rel="prefetch" href="/assets/js/46.16bfc8d2.js"><link rel="prefetch" href="/assets/js/47.762e7926.js"><link rel="prefetch" href="/assets/js/48.4e3fb577.js"><link rel="prefetch" href="/assets/js/49.d39d6217.js"><link rel="prefetch" href="/assets/js/50.29e9f8d1.js"><link rel="prefetch" href="/assets/js/51.6095d6bd.js"><link rel="prefetch" href="/assets/js/52.df8225fd.js"><link rel="prefetch" href="/assets/js/53.bcde160c.js"><link rel="prefetch" href="/assets/js/54.30cb1212.js"><link rel="prefetch" href="/assets/js/55.3ec7d6c7.js"><link rel="prefetch" href="/assets/js/56.e3e525f5.js"><link rel="prefetch" href="/assets/js/57.39f005f2.js"><link rel="prefetch" href="/assets/js/58.d69af7e0.js"><link rel="prefetch" href="/assets/js/59.a352d3a0.js"><link rel="prefetch" href="/assets/js/6.b7c61ba1.js"><link rel="prefetch" href="/assets/js/60.de7b9265.js"><link rel="prefetch" href="/assets/js/61.433c57ff.js"><link rel="prefetch" href="/assets/js/62.8dfb2c78.js"><link rel="prefetch" href="/assets/js/63.4d90d359.js"><link rel="prefetch" href="/assets/js/64.e7f370d9.js"><link rel="prefetch" href="/assets/js/65.9c71852f.js"><link rel="prefetch" href="/assets/js/66.eba29aba.js"><link rel="prefetch" href="/assets/js/67.a6c462bf.js"><link rel="prefetch" href="/assets/js/68.a54fecea.js"><link rel="prefetch" href="/assets/js/69.260ede44.js"><link rel="prefetch" href="/assets/js/7.499bf40e.js"><link rel="prefetch" href="/assets/js/70.ed02f564.js"><link rel="prefetch" href="/assets/js/71.835fd3be.js"><link rel="prefetch" href="/assets/js/72.dbab8cc7.js"><link rel="prefetch" href="/assets/js/73.80924fab.js"><link rel="prefetch" href="/assets/js/74.ede54dd0.js"><link rel="prefetch" href="/assets/js/75.4d0e9dd3.js"><link rel="prefetch" href="/assets/js/76.311c4ab7.js"><link rel="prefetch" href="/assets/js/77.2f189c53.js"><link rel="prefetch" href="/assets/js/78.e4a2d6f5.js"><link rel="prefetch" href="/assets/js/79.19b5e848.js"><link rel="prefetch" href="/assets/js/8.3525ff20.js"><link rel="prefetch" href="/assets/js/80.5ad884ee.js"><link rel="prefetch" href="/assets/js/81.555bb3aa.js"><link rel="prefetch" href="/assets/js/82.24bd7c19.js"><link rel="prefetch" href="/assets/js/83.2af9cde1.js"><link rel="prefetch" href="/assets/js/84.9361ff2b.js"><link rel="prefetch" href="/assets/js/85.b3ba2103.js"><link rel="prefetch" href="/assets/js/86.8de2f7bc.js"><link rel="prefetch" href="/assets/js/87.0467f1e3.js"><link rel="prefetch" href="/assets/js/88.4f7266c8.js"><link rel="prefetch" href="/assets/js/89.7de85c62.js"><link rel="prefetch" href="/assets/js/9.b0e8a85f.js"><link rel="prefetch" href="/assets/js/90.547a7230.js"><link rel="prefetch" href="/assets/js/91.cba95ce0.js"><link rel="prefetch" href="/assets/js/92.48eb37c8.js"><link rel="prefetch" href="/assets/js/93.2c0a2097.js"><link rel="prefetch" href="/assets/js/94.79de61d2.js"><link rel="prefetch" href="/assets/js/95.9ceca60f.js"><link rel="prefetch" href="/assets/js/96.fab3711b.js"><link rel="prefetch" href="/assets/js/97.ec3690c4.js"><link rel="prefetch" href="/assets/js/98.11585efa.js"><link rel="prefetch" href="/assets/js/99.ae7a2943.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1f6703fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avater.jpg" alt="FE Note" class="logo"> <span class="site-name can-hide">FE Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/1.HTML、HTML5概述.html" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/1.CSS、CSS3概述.html" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/01JS概述.html" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/01Vue概述.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/1.Node.js概述.html" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/1.数据库概述.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/01数据结构概述.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/01算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/1.计算机网络.html" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/1.操作系统（基础）.html" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11小程序/01小程序概述.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/01前端工程化概述.html" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/01前端安全概述.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/0.vscode相关.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/01chrome概述.html" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/1.git概述.html" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/1.学习中遇到的生词.html" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/0书籍汇总.html" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/0项目汇总.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/0.实战中遇到的问题归纳.html" class="nav-link">
+  实战问题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/01html相关/1.HTML、HTML5概述.html" class="nav-link">
+  HTML/5
+</a></div><div class="nav-item"><a href="/02css相关/1.CSS、CSS3概述.html" class="nav-link">
+  CSS/3
+</a></div><div class="nav-item"><a href="/03js相关/01JS概述.html" class="nav-link">
+  JS/ES6
+</a></div><div class="nav-item"><a href="/04vue/01Vue概述.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/05node/1.Node.js概述.html" class="nav-link">
+  NodeJS
+</a></div><div class="nav-item"><a href="/06数据库/1.数据库概述.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="四大必修" class="dropdown-title"><span class="title">四大必修</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/07数据结构/01数据结构概述.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/08算法/01算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/09计算机网络和浏览器/1.计算机网络.html" class="nav-link">
+  计算机网络和浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/10操作系统/1.操作系统（基础）.html" class="nav-link">
+  操作系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="OTHER" class="dropdown-title"><span class="title">OTHER</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/11小程序/01小程序概述.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/12前端工程化/01前端工程化概述.html" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/13前端安全/01前端安全概述.html" class="nav-link">
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/14VS-Code/0.vscode相关.html" class="nav-link">
+  VS Code
+</a></li><li class="dropdown-item"><!----> <a href="/15Chrome/01chrome概述.html" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/16Git/1.git概述.html" class="nav-link">
+  Git相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tips" class="dropdown-title"><span class="title">Tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/17生词本/1.学习中遇到的生词.html" class="nav-link">
+  生词本
+</a></li><li class="dropdown-item"><!----> <a href="/19书籍阅读/0书籍汇总.html" class="nav-link">
+  书籍阅读
+</a></li><li class="dropdown-item"><!----> <a href="/20项目/0项目汇总.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="/18实战问题/0.实战中遇到的问题归纳.html" class="nav-link">
+  实战问题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/03js相关/01JS概述.html" class="sidebar-link">01JS概述</a></li><li><a href="/03js相关/02JS基础.html" class="sidebar-link">2. JS基础</a></li><li><a href="/03js相关/03JS语法.html" class="sidebar-link">3. JS 语法</a></li><li><a href="/03js相关/04JS数据类型.html" class="sidebar-link">JS数据类型</a></li><li><a href="/03js相关/05对象.html" class="sidebar-link">对象</a></li><li><a href="/03js相关/06函数.html" class="sidebar-link">function</a></li><li><a href="/03js相关/07Symbol.html" class="sidebar-link">Symbol</a></li><li><a href="/03js相关/08DOM.html" class="sidebar-link">4.JS DOM</a></li><li><a href="/03js相关/09BOM.html" class="active sidebar-link">5.JS BOM</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#window-对象" class="sidebar-link">Window 对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#window的尺寸方法" class="sidebar-link">Window的尺寸方法</a></li><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#其他-window-方法" class="sidebar-link">其他 Window 方法</a></li><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#window-screen对象" class="sidebar-link">window.screen对象</a></li><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#alert-prompt-confirm" class="sidebar-link">alert / prompt / confirm</a></li></ul></li><li class="sidebar-sub-header"><a href="/03js相关/09BOM.html#navigator" class="sidebar-link">Navigator</a></li></ul></li><li><a href="/03js相关/10JS异步编程.html" class="sidebar-link">6.JS异步编程</a></li><li><a href="/03js相关/11JS正则.html" class="sidebar-link">5.JS 正则</a></li><li><a href="/03js相关/12JS设计模式.html" class="sidebar-link">7.JS设计模式</a></li><li><a href="/03js相关/13JS进阶.html" class="sidebar-link">8.JS进阶</a></li><li><a href="/03js相关/14函数式编程.html" class="sidebar-link">9.函数式编程</a></li><li><a href="/03js相关/15Cookie,Session,Token,JWT.html" class="sidebar-link">Cookie,Session,Token,JWT</a></li><li><a href="/03js相关/16ES6.html" class="sidebar-link">10.ES6+</a></li><li><a href="/03js相关/17V8引擎工作原理.html" class="sidebar-link">11.V8引擎工作原理</a></li><li><a href="/03js相关/18TypeScript.html" class="sidebar-link">12.TypeScript</a></li><li><a href="/03js相关/JS相关面试题.html" class="sidebar-link">X. JS相关面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_5-js-bom"><a href="#_5-js-bom" class="header-anchor">#</a> 5.JS BOM</h1> <p>浏览器对象模型（Browser Object Model (BOM)）尚无正式标准。</p> <p>由于现代浏览器已经（几乎）实现了 JavaScript 交互性方面的相同方法和属性，因此常被认为是 BOM 的方法和属性。</p> <h2 id="window-对象"><a href="#window-对象" class="header-anchor">#</a> Window 对象</h2> <p><a href="https://www.runoob.com/jsref/obj-window.html" target="_blank" rel="https://dignified.cn">Window对象属性和方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>所有浏览器都支持 window 对象。它表示浏览器窗口。</p> <p>所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员。</p> <p>全局变量是 window 对象的属性。</p> <p>全局函数是 window 对象的方法。</p> <p>甚至 HTML DOM 的 document 也是 window 对象的属性之一：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>window<span class="token punctuation">.</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;header&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>与此相同：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;header&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="window的尺寸方法"><a href="#window的尺寸方法" class="header-anchor">#</a> Window的尺寸方法</h3> <p>有三种方法能够确定浏览器窗口的尺寸。</p> <p>对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：</p> <ul><li><p>window.innerHeight - 浏览器窗口的内部高度(包括滚动条)</p></li> <li><p>window.innerWidth - 浏览器窗口的内部宽度(包括滚动条)
+对于 Internet Explorer 8、7、6、5：</p></li> <li><p>document.documentElement.clientHeight</p></li> <li><p>document.documentElement.clientWidth
+或者</p></li> <li><p>document.body.clientHeight
+*document.body.clientWidth</p></li></ul> <h3 id="其他-window-方法"><a href="#其他-window-方法" class="header-anchor">#</a> 其他 Window 方法</h3> <p>一些其他方法：</p> <p>window.open() - 打开新窗口
+window.close() - 关闭当前窗口
+window.moveTo() - 移动当前窗口
+window.resizeTo() - 调整当前窗口的尺寸</p> <h3 id="window-screen对象"><a href="#window-screen对象" class="header-anchor">#</a> window.screen对象</h3> <p>window.screen对象在编写时可以不使用 window 这个前缀。</p> <p>一些属性：</p> <ul><li>screen.availWidth - 可用的屏幕宽度</li> <li>screen.availHeight - 可用的屏幕高度</li></ul> <p>screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如窗口任务栏。</p> <h3 id="alert-prompt-confirm"><a href="#alert-prompt-confirm" class="header-anchor">#</a> alert / prompt / confirm</h3> <h2 id="navigator"><a href="#navigator" class="header-anchor">#</a> Navigator</h2> <p><img src="https://gitee.com/hello_hww/img/raw/master/img1/20200808063507.png" alt=""></p> <div class="gitalk-container"><div id="gitalk-container"></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/11/2020, 6:14:10 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/03js相关/08DOM.html" class="prev">
+        4.JS DOM
+      </a></span> <span class="next"><a href="/03js相关/10JS异步编程.html">
+        6.JS异步编程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7cfd3afd.js" defer></script><script src="/assets/js/2.7c2e0a4d.js" defer></script><script src="/assets/js/28.6aee56fe.js" defer></script><script src="/assets/js/5.bf8043b7.js" defer></script>
+  </body>
+</html>
